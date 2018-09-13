@@ -1,0 +1,26 @@
+{
+  "packageDirectories" : [
+    {"path": "sfdx-source/force-app", "default": true}
+  ],
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "43.0",
+  "plugins": {
+    "sfdxFalcon": {
+      "producerAlias"   : "sfdx-isv",
+      "producerName"    : "Salesforce DX Tech Enablement for ISVs",
+      "projectAlias"    : "fsc-demo-pack",
+      "projectName"     : "FSC Demo Pack Starter Kit",
+      "projectType"     : "appx:single-demo",
+      "defaultRecipe"   : "demo-recipe.json",
+      "gitRemoteUri"    : "https://github.com/sfdx-isv/fsc-demo-pack.git",
+      "gitHubUrl"       : "https://github.com/my-org/my-repo",
+      "projectVersion"  : "0.0.1",
+      "schemaVersion"   : "0.0.1",
+      "pluginVersion"   : "0.0.7",
+      "appxPackage"     : {},
+      "appxDemo": {
+        "demoRecipes"   : ["demo-recipe.json"]
+      }
+    }			
+  }
+}

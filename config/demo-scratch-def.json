@@ -1,0 +1,19 @@
+{
+  "orgName": "Salesforce DX Tech Enablement for ISVs Demo Org",
+  "country": "US",
+  "edition": "Developer",
+  "description": "ADK Sample Demo Org",
+  "hasSampleData": false,
+  "language": "en_US",
+  "features": [
+    "Communities",
+    "ContactsToMultipleAccounts"
+  ],
+  "orgPreferences": {
+    "enabled": [
+      "S1DesktopEnabled",
+      "ChatterEnabled",
+      "NetworksEnabled"      
+    ]
+  }
+}
