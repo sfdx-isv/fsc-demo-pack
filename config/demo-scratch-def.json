@@ -1,13 +1,15 @@
 {
-  "orgName": "Salesforce DX Tech Enablement for ISVs Demo Org",
+  "orgName": "FSC Demo Pack",
   "country": "US",
   "edition": "Developer",
-  "description": "ADK Sample Demo Org",
-  "hasSampleData": false,
+  "description": "Contains a baseline demo of the Financial Services Cloud app.",
+  "hasSampleData": true,
   "language": "en_US",
   "features": [
     "Communities",
-    "ContactsToMultipleAccounts"
+    "ContactsToMultipleAccounts",
+    "ExpandedSourceTracking",
+    "PersonAccounts"
   ],
   "orgPreferences": {
     "enabled": [

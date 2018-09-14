@@ -9,6 +9,6 @@
   "EmailEncodingKey": "UTF-8",
   "LanguageLocaleKey": "en_US",
   "profileName": "Standard User",
-  "permsets": ["FSC_DW"],
+  "permsets": [],
   "password": "abc123pass"
 }

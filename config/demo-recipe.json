@@ -1,19 +1,19 @@
 {
-  "recipeName":     "ADK Sample Demo Recipe",
-  "description":    "Sample Recipe for Building an ADK Demo",
+  "recipeName":     "FSC Demo Pack",
+  "description":    "A Recipe for building Financial Service Cloud (FSC) demo orgs",
   "recipeType":     "appx:demo-recipe",
   "recipeVersion":  "1.0.0",
   "schemaVersion":  "0.1.2",
   "options":  {
     "haltOnError":      true,
-    "noCustomInstall":  true,
+    "noCustomInstall":  false,
     "skipGroups":       [],
     "skipActions":      [],
     "targetOrgs": [
       {
         "orgName":        "Scratch Org Demo",
-        "alias":          "sfdx-isv_scratch-demo",
-        "description":    "Installs demo in a Scratch Org",
+        "alias":          "sfdx-isv_fsc-demo-pack_scratch-demo",
+        "description":    "Installs the FSC Demo Pack in a Scratch Org",
         "isScratchOrg":   true,
         "scratchDefJson": "demo-scratch-def.json"
       }
@@ -26,21 +26,21 @@
       "description":    "Installs all managed and unmanged packages required by the demo",
       "recipeSteps": [
         { 
-          "stepName":     "Install Falcon-X Managed Package",
-          "description":  "Installs version 1.2 (Beta 10) of the Falcon-X package",
+          "stepName":     "Install FSC Managed Package",
+          "description":  "Installs version 214.3.0 of the FSC managed package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Falcon-X, Version 1.2 (Beta 10)",
-            "packageVersionId": "04t1N000001bW4g"
+            "packageName":      "Financial Services Cloud (Managed Package), Version 214.3.0",
+            "packageVersionId": "04t80000000ck0v"
           }
         },
         {
-          "stepName":     "Install VMC Base Package",
-          "description":  "Installs version 1.37 (Beta 1) of the VMC Base Package",
+          "stepName":     "Install FSC Extension Package (unmanaged)",
+          "description":  "Installs version 212.3 of the unmanaged FSC Extension Package",
           "action":       "install-package",
           "options": {
-            "packageName":      "VMC Base Package, Version 1.37 (Beta 1)",
-            "packageVersionId": "04t360000011vqy"
+            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 212.3",
+            "packageVersionId": "04t80000000cj7N"
           }
         }
       ]
@@ -113,24 +113,7 @@
       "stepGroupName":    "Import/Create Data",
       "alias":            "import-data",
       "description":      "Imports or creates data in the demo org",
-      "recipeSteps": [
-        {
-          "stepName":     "Import Custom Settings",
-          "description":  "Imports custom settings data",
-          "action":       "import-data-tree",
-          "options": {
-            "plan": "custom-settings/data-plan.json"
-          }
-        },
-        {
-          "stepName":     "Import Sample Data",
-          "description":  "Imports sample account and DriveWealth data",
-          "action":       "import-data-tree",
-          "options": {
-            "plan": "sample-customers/data-plan.json"
-          }
-        }
-      ]
+      "recipeSteps": []
     }
   ],
   "handlers": [
