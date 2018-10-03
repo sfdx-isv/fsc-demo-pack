@@ -3,7 +3,7 @@
   "country": "US",
   "edition": "Developer",
   "description": "Contains a baseline demo of the Financial Services Cloud app.",
-  "hasSampleData": true,
+  "hasSampleData": false,
   "language": "en_US",
   "features": [
     "Communities",
