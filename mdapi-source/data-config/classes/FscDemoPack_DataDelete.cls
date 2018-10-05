@@ -26,6 +26,16 @@ public class FscDemoPack_DataDelete {
       'Adams Household (Sample)'
     };
 
+    // Deactivate then DELETE all Rollup by Lookup Filter Configs
+    Map<Id,FinServ__RollupByLookupConfig__c> rollupByLookupFilterConfig = new Map<Id,FinServ__RollupByLookupConfig__c>([
+      SELECT Id FROM FinServ__RollupByLookupConfig__c 
+    ]);
+    for (FinServ__RollupByLookupConfig__c rblConfig : rollupByLookupFilterConfig.values()) {
+      rblConfig.FinServ__Active__c = false;
+    }
+    UPDATE rollupByLookupFilterConfig.values();
+    DELETE rollupByLookupFilterConfig.values();
+
     // Delete Financial Accounts
     Map<Id,FinServ__FinancialAccount__c> financialAccountsToDelete = new Map<Id,FinServ__FinancialAccount__c>([
       SELECT Id FROM FinServ__FinancialAccount__c 
