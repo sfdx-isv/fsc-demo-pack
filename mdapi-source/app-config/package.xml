@@ -6,11 +6,19 @@
     </types>
     <types>
         <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>Profile</name>
     </types>
     <types>
         <members>*</members>
-        <name>CustomObject</name>
+        <name>StandardValueSet</name>
     </types>
     <version>43.0</version>
 </Package>
