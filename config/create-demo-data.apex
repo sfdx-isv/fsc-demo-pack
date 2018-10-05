@@ -1,0 +1,1 @@
+FscDemoPack_DataSetup.createAllDemoData();
