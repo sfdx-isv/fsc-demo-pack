@@ -1,0 +1,820 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef1"
+            },
+            "Name": "RBLForFinAcctsClientHeldJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalHeldFinAcctsJointOwner__c",
+            "FinServ__UpdateOnChange__c": "HeldAway__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef2"
+            },
+            "Name": "RBLForFinAcctsClientHeldPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalHeldFinAcctsPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "HeldAway__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef3"
+            },
+            "Name": "RBLForFinAcctsHHHeld",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalHeldFinAcctsPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "HeldAway__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef4"
+            },
+            "Name": "RBLforAUMClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalAUMJointOwner__c",
+            "FinServ__UpdateOnChange__c": "Managed__c, Balance__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef5"
+            },
+            "Name": "RBLforAUMHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalAUMPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "Managed__c, Balance__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef6"
+            },
+            "Name": "RBLforAUMClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalAUMPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "Managed__c, Balance__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef7"
+            },
+            "Name": "RBLForFARForTotalOutstandingCreditPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalOutstandingCreditPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef8"
+            },
+            "Name": "RBLForFARForTotalOutstandingCreditJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalOutstandingCreditJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef9"
+            },
+            "Name": "RBLForTotalOutstandingCreditBankerHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalOutstandingCreditPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef10"
+            },
+            "Name": "RBLForFARForTotalNumberOfAccountsPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Id",
+            "FinServ__ToField__c": "TotalNumberOfFinAccountsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Count",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef11"
+            },
+            "Name": "RBLForFARForTotalNumberOfAccountsJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Id",
+            "FinServ__ToField__c": "TotalNumberOfFinAccountsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Count",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef12"
+            },
+            "Name": "RBLForFARForLastTransactionDatePrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.LastTransactionDate__c",
+            "FinServ__ToField__c": "LastTransactionDatePrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Max",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef13"
+            },
+            "Name": "RBLForFARForLastTransactionDateJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.LastTransactionDate__c",
+            "FinServ__ToField__c": "LastTransactionDateJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Max",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef14"
+            },
+            "Name": "RBLForFARForTotalBankDepositsJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalBankDepositsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef15"
+            },
+            "Name": "RBLForFARForTotalBankDepositsPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalBankDepositsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef16"
+            },
+            "Name": "RBLForFARForFinAcctsClientHeldJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalHeldFinAcctsJointOwner__c",
+            "FinServ__UpdateOnChange__c": "FinancialAccount__r.HeldAway__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef17"
+            },
+            "Name": "RBLForFARForFinAcctsClientHeldPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalHeldFinAcctsPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "FinancialAccount__r.HeldAway__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef18"
+            },
+            "Name": "RBLForFARForFinAcctsClientJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalFinAcctsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef19"
+            },
+            "Name": "RBLForFARForFinAcctsClientPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalFinAcctsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef20"
+            },
+            "Name": "RBLForFARForInsuranceClientJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.InsuredAmount__c",
+            "FinServ__ToField__c": "TotalInsuranceJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef21"
+            },
+            "Name": "RBLForFARForInsuranceClientPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.InsuredAmount__c",
+            "FinServ__ToField__c": "TotalInsurancePrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef22"
+            },
+            "Name": "RBLForFARForInvestmentsClientJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalInvestmentsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef23"
+            },
+            "Name": "RBLForFARForInvestmentsClientPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalInvestmentsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef24"
+            },
+            "Name": "RBLForFARforAUMClientJointOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalAUMJointOwner__c",
+            "FinServ__UpdateOnChange__c": "FinancialAccount__r.Managed__c, FinancialAccount__r.Balance__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2 AND 3"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef25"
+            },
+            "Name": "RBLForFARforAUMClientPrimaryOwner",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Balance__c",
+            "FinServ__ToField__c": "TotalAUMPrimaryOwner__c",
+            "FinServ__UpdateOnChange__c": "FinancialAccount__r.Managed__c, FinancialAccount__r.Balance__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1 AND 2 AND 3"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef26"
+            },
+            "Name": "RBLForFARForInsurancePremium",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "FinancialAccount__r.Premium__c",
+            "FinServ__ToField__c": "TotalPremium__c",
+            "FinServ__FromObject__c": "FinancialAccountRole__c",
+            "FinServ__LookupField__c": "RelatedAccount__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef27"
+            },
+            "Name": "RBLForBankingHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalBankDepositsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account",
+            "FinServ__WhereClause__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef28"
+            },
+            "Name": "RBLForTotalRevenueBanker",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalRevenue__c",
+            "FinServ__FromObject__c": "Revenue__c",
+            "FinServ__LookupField__c": "Account__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef29"
+            },
+            "Name": "RBLForTotalNumberOfAccountsBankerHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Id",
+            "FinServ__ToField__c": "TotalNumberOfFinAccountsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Count",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef30"
+            },
+            "Name": "RBLForFARForLastTransactionDateHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "LastTransactionDate__c",
+            "FinServ__ToField__c": "LastTransactionDatePrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Max",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef31"
+            },
+            "Name": "RBLForBankingClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalBankDepositsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "BankingAccount",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef32"
+            },
+            "Name": "RBLForBankingClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalBankDepositsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "BankingAccount",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef33"
+            },
+            "Name": "RBLForFinAcctsClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalFinAcctsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef34"
+            },
+            "Name": "RBLForFinAcctsClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalFinAcctsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef35"
+            },
+            "Name": "RBLForFinAcctsHHTotal",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalFinAcctsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef36"
+            },
+            "Name": "RBLForInsuranceClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "InsuredAmount__c",
+            "FinServ__ToField__c": "TotalInsuranceJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InsurancePolicy",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef37"
+            },
+            "Name": "RBLForInsuranceClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "InsuredAmount__c",
+            "FinServ__ToField__c": "TotalInsurancePrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InsurancePolicy",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef38"
+            },
+            "Name": "RBLForInsuranceHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "InsuredAmount__c",
+            "FinServ__ToField__c": "TotalInsurancePrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InsurancePolicy",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef39"
+            },
+            "Name": "RBLForInvestmentsClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalInvestmentsJointOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef40"
+            },
+            "Name": "RBLForInvestmentsClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalInvestmentsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef41"
+            },
+            "Name": "RBLForInvestmentsHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Balance__c",
+            "FinServ__ToField__c": "TotalInvestmentsPrimaryOwner__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InvestmentAccount",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef42"
+            },
+            "Name": "RBLForLiabilitiesClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalLiabilitiesJointOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "Liability",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef43"
+            },
+            "Name": "RBLForLiabilitiesClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalLiabilitiesPrimaryOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "Liability",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef44"
+            },
+            "Name": "RBLForLiabilitiesHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalLiabilitiesPrimaryOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "Liability",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef45"
+            },
+            "Name": "RBLForNonfinAssetsClientJointOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalNonfinancialAssetsJointOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "NonfinancialAsset",
+            "FinServ__LookupField__c": "JointOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef46"
+            },
+            "Name": "RBLForNonfinAssetsClientPrimaryOwner",
+            "FinServ__Active__c": false,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalNonfinancialAssetsPrimaryOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "NonfinancialAsset",
+            "FinServ__LookupField__c": "PrimaryOwner__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef47"
+            },
+            "Name": "RBLForNonfinAssetsHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Amount__c",
+            "FinServ__ToField__c": "TotalNonfinancialAssetsPrimaryOwner__c",
+            "FinServ__FromObject__c": "AssetsAndLiabilities__c",
+            "FinServ__FromRecordType__c": "NonfinancialAsset",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__ProcessType__c": "Realtime",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        },
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef48"
+            },
+            "Name": "RBLForInsurancePremiumHH",
+            "FinServ__Active__c": true,
+            "FinServ__FromField__c": "Premium__c",
+            "FinServ__ToField__c": "TotalPremium__c",
+            "FinServ__FromObject__c": "FinancialAccount__c",
+            "FinServ__FromRecordType__c": "InsurancePolicy",
+            "FinServ__LookupField__c": "Household__c",
+            "FinServ__Namespace__c": "Industries",
+            "FinServ__RollupOperation__c": "Sum",
+            "FinServ__ToObject__c": "Account"
+        }
+    ]
+}

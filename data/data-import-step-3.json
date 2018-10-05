@@ -1,0 +1,12 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "FinServ__RollupByLookupConfig__c",
+                "referenceId": "FinServ__RollupByLookupConfig__cRef1-U"
+            },
+            "Id": "@FinServ__RollupByLookupConfig__cRef1",
+            "FinServ__WhereClause__c": "1"
+        }
+    ]
+}
