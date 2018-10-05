@@ -8,7 +8,7 @@
     "haltOnError":      true,
     "noCustomInstall":  false,
     "skipGroups":       [],
-    "skipActions":      [],
+    "skipActions":      ["import-data-tree"],
     "targetOrgs": [
       {
         "orgName":        "Scratch Org Demo",
@@ -114,6 +114,14 @@
       "alias":            "import-data",
       "description":      "Imports or creates data in the demo org",
       "recipeSteps": [
+        {
+          "stepName":     "Import FSC App Config Data",
+          "description":  "Data tree import of simple config data used by FSC to control how the app behaves",
+          "action":       "import-data-tree",
+          "options": {
+            "plan":       "data-import-plan.json"
+          }
+        },
         {
           "stepName":     "Create FSC Demo Data",
           "description":  "Uses anonymous Apex to call FscDemoPack_DataSetup.createAllDemoData(), which creates FSC test data in the org.",
