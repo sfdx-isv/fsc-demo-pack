@@ -2,7 +2,7 @@
   "recipeName":     "FSC Demo Pack",
   "description":    "A Recipe for building Financial Service Cloud (FSC) demo orgs",
   "recipeType":     "appx:demo-recipe",
-  "recipeVersion":  "1.0.0",
+  "recipeVersion":  "1.0.1",
   "schemaVersion":  "0.1.2",
   "options":  {
     "haltOnError":      true,
@@ -113,7 +113,16 @@
       "stepGroupName":    "Import/Create Data",
       "alias":            "import-data",
       "description":      "Imports or creates data in the demo org",
-      "recipeSteps": []
+      "recipeSteps": [
+        {
+          "stepName":     "Create FSC Demo Data",
+          "description":  "Uses anonymous Apex to call FscDemoPack_DataSetup.createAllDemoData(), which creates FSC test data in the org.",
+          "action":       "execute-apex",
+          "options": {
+            "apexCodeFile": "create-demo-data.apex"
+          }
+        }
+      ]
     }
   ],
   "handlers": [
