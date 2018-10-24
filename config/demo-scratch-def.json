@@ -8,7 +8,6 @@
   "features": [
     "Communities",
     "ContactsToMultipleAccounts",
-    "ExpandedSourceTracking",
     "PersonAccounts"
   ],
   "orgPreferences": {
