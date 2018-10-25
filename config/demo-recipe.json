@@ -27,20 +27,20 @@
       "recipeSteps": [
         { 
           "stepName":     "Install FSC Managed Package",
-          "description":  "Installs version 214.3.0 of the FSC managed package",
+          "description":  "Installs version 216.1.0 of the FSC managed package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Financial Services Cloud (Managed Package), Version 214.3.0",
-            "packageVersionId": "04t80000000ck0v"
+            "packageName":      "Financial Services Cloud (Managed Package), Version 216.1.0",
+            "packageVersionId": "04t80000000jZjl"
           }
         },
         {
           "stepName":     "Install FSC Extension Package (unmanaged)",
-          "description":  "Installs version 212.3 of the unmanaged FSC Extension Package",
+          "description":  "Installs version 216.0 of the unmanaged FSC Extension Package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 212.3",
-            "packageVersionId": "04t80000000cj7N"
+            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 216.0",
+            "packageVersionId": "04t80000001AWVh"
           }
         }
       ]
