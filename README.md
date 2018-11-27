@@ -27,7 +27,7 @@ Salesforce Developers, Administrators, Business Analysts, and anyone else with a
 Just follow the [SFDX-Falcon Quick Start Guide](https://sfdx-isv.github.io/sfdx-falcon/start/quickstart.html), then execute three simple commands:
 
 ```html
-$ sfdx falcon:demo:clone https://github.com/sfdx-isv/fsc-demo-pack.git
+$ sfdx falcon:adk:clone https://github.com/sfdx-isv/fsc-demo-pack.git
 
 $ cd fsc-demo-pack
 
