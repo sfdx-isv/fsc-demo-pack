@@ -31,7 +31,7 @@ $ sfdx falcon:demo:clone https://github.com/sfdx-isv/fsc-demo-pack.git
 
 $ cd fsc-demo-pack
 
-$ sfdx falcon:demo:install
+$ sfdx falcon:adk:install
 ```
 
 ## Questions / Comments?
