@@ -18,7 +18,7 @@ When you use the **FSC Demo Pack** together with the [AppExchange Demo Kit (ADK)
 
 ## Here's what the process looks like in action
 
-![AppExchange Demo Kit (ADK) falcon:demo:install](https://drive.google.com/uc?export=view&id=1pHTCkPSmGHzS_FoqidyA400ys6yFV8Am)
+![AppExchange Demo Kit (ADK) falcon:adk:install](https://drive.google.com/uc?export=view&id=1pHTCkPSmGHzS_FoqidyA400ys6yFV8Am)
 
 ## I'm sold! How do I get started?
 
