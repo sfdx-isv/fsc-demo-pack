@@ -33,33 +33,6 @@
             "packageName":      "Financial Services Cloud (Managed Package), Version 216.1.0",
             "packageVersionId": "04t80000000jZjl"
           }
-        },
-        {
-          "stepName":     "Install FSC Extension Package (unmanaged)",
-          "description":  "Installs version 216.X of the unmanaged FSC Extension Package",
-          "action":       "install-package",
-          "options": {
-            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 216.X",
-            "packageVersionId": "04t80000001AWVh"
-          }
-        },
-        {
-          "stepName":     "Install Financial Services Referral Ext (unmanaged)",
-          "description":  "Installs version 216.X of the unmanaged Financial Services Referral Ext",
-          "action":       "install-package",
-          "options": {
-            "packageName":      "Financial Services Referral Ext (Unmanaged Package), Version 216.X",
-            "packageVersionId": "04t80000001AWrf"
-          }
-        },
-        {
-          "stepName":     "Install Financial Services Commercial Banking Ext (unmanaged)",
-          "description":  "Installs version 216.X of the unmanaged Financial Services Commercial Banking Ext",
-          "action":       "install-package",
-          "options": {
-            "packageName":      "Financial Services Commercial Banking Ext (Unmanaged Package), Version 216.X",
-            "packageVersionId": "04t80000000lTrP"
-          }
         }
       ]
     },
@@ -69,27 +42,11 @@
       "description":      "Deploys code from the mdapi-source directory",
       "recipeSteps": [
         {
-          "stepName":     "Deploy App Config",
-          "description":  "Deploys metadata found in mdapi-source/app-config",
+          "stepName":     "Deploy Custom Config",
+          "description":  "Deploys metadata found in mdapi-source/mdapi",
           "action":       "deploy-metadata",
           "options": {
-            "mdapiSource": "app-config"
-          }
-        },
-        {
-          "stepName":     "Deploy Data Config",
-          "description":  "Deploys metadata found in mdapi-source/data-config",
-          "action":       "deploy-metadata",
-          "options": {
-            "mdapiSource": "data-config"
-          }
-        },
-        {
-          "stepName":     "Deploy Org Config",
-          "description":  "Deploys metadata found in mdapi-source/org-config",
-          "action":       "deploy-metadata",
-          "options": {
-            "mdapiSource": "org-config"
+            "mdapiSource": "mdapi"
           }
         }
       ]

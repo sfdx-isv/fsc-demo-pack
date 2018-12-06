@@ -24,3 +24,4 @@
 # Ignore all .md files (like README.md)
 **.md
 *appMenu
+*profiles
