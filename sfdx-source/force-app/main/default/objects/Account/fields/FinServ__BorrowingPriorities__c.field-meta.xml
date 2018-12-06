@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__BorrowingPriorities__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Borrowing Priorities</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Build Equity</fullName>
+                <default>false</default>
+                <label>Build Equity</label>
+            </value>
+            <value>
+                <fullName>Debt Consolidation</fullName>
+                <default>false</default>
+                <label>Debt Consolidation</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Investments</fullName>
+                <default>false</default>
+                <label>Investments</label>
+            </value>
+            <value>
+                <fullName>Large Capital Purchases</fullName>
+                <default>false</default>
+                <label>Large Capital Purchases</label>
+            </value>
+            <value>
+                <fullName>Property Purchase</fullName>
+                <default>false</default>
+                <label>Property Purchase</label>
+            </value>
+            <value>
+                <fullName>Renovations</fullName>
+                <default>false</default>
+                <label>Renovations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

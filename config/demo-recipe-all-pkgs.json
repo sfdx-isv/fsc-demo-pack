@@ -60,6 +60,24 @@
             "packageName":      "Financial Services Commercial Banking Ext (Unmanaged Package), Version 216.X",
             "packageVersionId": "04t80000000lTrP"
           }
+        },
+        {
+          "stepName":     "Install Financial Services Cloud - Einstein Analytics (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Financial Services Cloud - Einstein Analytics",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Financial Services Cloud - Einstein Analytics (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04tB0000000JliU"
+          }
+        },
+        {
+          "stepName":     "Install Chatbot for Industries (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Chatbot for Industries",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Chatbot for Industries (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04tB00000006LEy"
+          }
         }
       ]
     },

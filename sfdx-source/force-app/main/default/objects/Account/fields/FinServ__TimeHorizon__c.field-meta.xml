@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__TimeHorizon__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Time Horizon</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Long Term</fullName>
+                <default>false</default>
+                <label>Long Term</label>
+            </value>
+            <value>
+                <fullName>Medium Term</fullName>
+                <default>false</default>
+                <label>Medium Term</label>
+            </value>
+            <value>
+                <fullName>Short Term</fullName>
+                <default>false</default>
+                <label>Short Term</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__NotAllowingConversionToIndividual</fullName>
+    <active>false</active>
+    <description>Not allowing changing the record type of &quot;non-Individual&quot; to &quot;Individual&quot; record type</description>
+    <errorConditionFormula>1!=1</errorConditionFormula>
+    <errorMessage>The record type can&#39;t be changed to Individual.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__HouseholdCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>FinServ__TotalFinancialAccounts__c</fields>
+    <fields>FinServ__AUM__c</fields>
+    <fields>FinServ__NextInteraction__c</fields>
+    <fields>FinServ__LastInteraction__c</fields>
+    <label>Household Compact Layout</label>
+</CompactLayout>
