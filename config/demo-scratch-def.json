@@ -1,7 +1,7 @@
 {
   "orgName": "FSC Demo Pack",
   "country": "US",
-  "edition": "Developer",
+  "edition": "Partner Developer",
   "description": "Contains a baseline demo of the Financial Services Cloud app.",
   "hasSampleData": false,
   "language": "en_US",
@@ -14,7 +14,7 @@
     "enabled": [
       "S1DesktopEnabled",
       "ChatterEnabled",
-      "NetworksEnabled"      
+      "NetworksEnabled"  
     ]
   }
 }

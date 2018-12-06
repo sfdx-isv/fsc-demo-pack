@@ -23,7 +23,7 @@
     {
       "stepGroupName":  "Install Packages",
       "alias":          "install-packages",
-      "description":    "Installs all managed and unmanged packages required by the demo",
+      "description":    "Installs all managed and unmanged packages required by the demo. /packaging/installPackage.apexp?p0=",
       "recipeSteps": [
         { 
           "stepName":     "Install FSC Managed Package",
@@ -36,11 +36,47 @@
         },
         {
           "stepName":     "Install FSC Extension Package (unmanaged)",
-          "description":  "Installs version 216.0 of the unmanaged FSC Extension Package",
+          "description":  "Installs version 216.X of the unmanaged FSC Extension Package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 216.0",
+            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 216.X",
             "packageVersionId": "04t80000001AWVh"
+          }
+        },
+        {
+          "stepName":     "Install Financial Services Referral Ext (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Financial Services Referral Ext",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Financial Services Referral Ext (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04t80000001AWrf"
+          }
+        },
+        {
+          "stepName":     "Install Financial Services Commercial Banking Ext (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Financial Services Commercial Banking Ext",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Financial Services Commercial Banking Ext (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04t80000000lTrP"
+          }
+        },
+        {
+          "stepName":     "Install Financial Services Cloud - Einstein Analytics (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Financial Services Cloud - Einstein Analytics",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Financial Services Cloud - Einstein Analytics (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04tB0000000JliU"
+          }
+        },
+        {
+          "stepName":     "Install Chatbot for Industries (unmanaged)",
+          "description":  "Installs version 216.X of the unmanaged Chatbot for Industries",
+          "action":       "install-package",
+          "options": {
+            "packageName":      "Chatbot for Industries (Unmanaged Package), Version 216.X",
+            "packageVersionId": "04tB00000006LEy"
           }
         }
       ]
