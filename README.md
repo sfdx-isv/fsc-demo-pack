@@ -4,4 +4,4 @@ Pre-Requisites:
   git clone https://github.com/Vchalem/fsc-demo-pack.git
 * cd fsc-demo-pack
 * Log into your Salesforce DevHub 
-* Set the Alias of your devhub in the “devhub” variable at the beginning of the "FSCADKProj1" script
+* Set the Alias of your devhub in the “devhub” variable at the beginning of the "FSC-ADKProj1" script
