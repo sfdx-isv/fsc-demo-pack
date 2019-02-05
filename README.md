@@ -1,19 +1,26 @@
 Pre-Requisites: 
 
-* Log into your Salesforce DevHub
+1) Log into your Salesforce DevHub
     * sfdx force:auth:web:login
 
-* Clone the repo: 
+2) Clone the repo: 
     * git clone https://github.com/Vchalem/fsc-demo-pack.git
-    *checkout BashScripts branch
     
-* Change your directory to where the repo is: 
+3) Change your directory to where the repo is: 
     * cd fsc-demo-pack
 
+4) Checkout the BashScripts branch: 
+   * git checkout BashScripts
 
-Before running the bash script: 
+5) Open the orgInit.sh file and edit: 
+   *Set the variable “devhub” at the beginning of the script to point to your devhub alias
+    * (To set an alias for your devhub use this command: sfdx force:alias:set YourAlias=username@example.com)
+    
+6) Run the orgInit.sh script
+   * drag the orgInit.sh file to your terminal window (*use the same terminal window where you completed steps 1-4)
 
-* *Set the variable “devhub” at the beginning of the script to point to your devhub alias
-    * To set an alias for your devhub use this command: 
-        * sfdx force:alias:set YourAlias=username@example.com
+
+
+
+
 
