@@ -24,46 +24,93 @@ dataconfig=mdapi-source/data-config
 orgconfig=mdapi-source/org-config
 
 
-echo Welcome! Please make sure you have the Salesforce CLI installed. Please authenticate to your DevHub
+echo Scratch Org Creation
 
-#spin up new scratch org w/ config 
-sfdx force:org:create -f $config -a $alias -v $devhub
+sfdx force:org:create -f $config -a $alias -v $devhub -d 14 2> error1.txt
+
+output1=$(grep -e"ERROR\b:" error1.txt)
+echo $output1
+
+if [ -z $output1 ]
+then #no error - continue  
 
 #validate creation.."Successfully created scratch org" (capture username etc..)
 #capture output with either $output or $result..
 #[capture] eror if -- The signup request failed because this organization has reached its active scratch org limit.
 #//echo
 
-#install FSC packages 
+echo FSC Package Installation
+sfdx force:package:install --package $pckg1 -w 20 -u $alias 2> error2.txt
+output2=$(grep -e"ERROR\b:" error2.txt)
+echo $output2
 
-sfdx force:package:install --package $pckg1 -w 20 -u $alias
-sfdx force:package:install --package $pckg2 -w 20 -u $alias
+if [ -z $output2 ]
+then #no error - continue 
+sfdx force:package:install --package $pckg2 -w 20 -u $alias 2> error3.txt
+output3=$(grep -e"ERROR\b:" error3.txt)
+echo $output3
 
-#validate/echo pckg install successful
+if [ -z $output3 ]
+then 
 
-#deploy mdapi config
-sfdx force:mdapi:deploy --deploydir $appconfig -u $alias
-#validate/echo
+echo deploying app config
+sfdx force:mdapi:deploy --deploydir $appconfig -u $alias 2> error4.txt
+output4=$(grep -e"ERROR\b:" error4.txt)
+echo $output4
 
-sfdx force:mdapi:deploy --deploydir $dataconfig -u $alias
-#validate/echo
+if [ -z $output4 ]
+then 
 
-sfdx force:mdapi:deploy --deploydir $orgconfig -u $alias
-#validate/echo
+echo deploying data config
+sfdx force:mdapi:deploy --deploydir $dataconfig -u $alias 2> error5.txt
+output5=$(grep -e"ERROR\b:" error5.txt)
+echo $output5
 
-sfdx force:source:push -u $alias
-#(for now none here..) validate/echo 
+if [ -z $output5 ]
+then 
 
-#config users - perms, etc
-sfdx force:user:permset:assign -n FinancialServicesCloudStandard -u $alias
-#assume user running this should be getting this perm set? 
-#validate/echo
+echo deploying org config
+sfdx force:mdapi:deploy --deploydir $orgconfig -u $alias 2> error6.txt
+output6=$(grep -e"ERROR\b:" error6.txt)
+echo $output6
+
+if [ -z $output6 ]
+then 
+
+echo sfdx source push
+sfdx force:source:push -u $alias 2> error7.txt
+output7=$(grep -e"ERROR\b:" error7.txt)
+echo $output7
+
+if [ -z $output7 ]
+then 
+
+echo set user permissions
+sfdx force:user:permset:assign -n FinancialServicesCloudStandard -u $alias 2> error 8.txt
+output8=$(grep -e"ERROR\b:" error8.txt)
+echo $output8
+
+if [ -z $output8 ]
+then 
+
+echo create demo data 
+sfdx force:apex:execute -f config/create-demo-data.apex -u $alias 2> error 9.txt
+output9=$(grep -e"ERROR\b:" error9.txt)
+echo $output9
+
+if [ -z $output9 ]
+then 
+
+echo open scratch org
+sfdx force:org:open -u $alias 2> error 10.txt
+output10=$(grep -e"ERROR\b:" error10.txt)
+echo $output10
+
+if [ -z $output2 ]
+then 
+	echo "Success"
 
 
-#run apex anonymous to create demo data
-sfdx force:apex:execute -f config/create-demo-data.apex -u $alias
-#validate/echo 
-
-sfdx force:org:open -u $alias
-
-
+else
+	echo "Check Error Log"
+fi 
