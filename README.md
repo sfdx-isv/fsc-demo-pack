@@ -18,6 +18,7 @@ Pre-Requisites:
     
 6) Run the orgInit.sh script
    * drag the orgInit.sh file to your terminal window (*use the same terminal window where you completed steps 1-4)
+   * hit enter
 
 
 
