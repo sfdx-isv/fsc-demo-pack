@@ -26,13 +26,6 @@ orgconfig=mdapi-source/org-config
 
 echo Welcome! Please make sure you have the Salesforce CLI installed. Please authenticate to your DevHub
 
-<<<<<<< HEAD:orgInit.sh
-=======
-
-echo $PWD
- 
-
->>>>>>> 9c65996dd766e80c1357427681f89d42c732962e:FSC-ADKProj1
 #spin up new scratch org w/ config 
 sfdx force:org:create -f $config -a $alias -v $devhub
 
