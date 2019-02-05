@@ -1,4 +1,4 @@
-Pre-Requisites: 
+Instructions to Run the Scripts:
 
 1) Log into your Salesforce DevHub
     * sfdx force:auth:web:login
