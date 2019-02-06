@@ -65,7 +65,6 @@ if [ "$assignPermissionSet" == 1 ] && [ "$errFlag" -eq 0 ]; then
 			if [ -z "$output" ]; then
 				errFlag=0
 			else
-				cat logs/errorPermSetAssign.txt
 				errFlag=1
 			fi
 		else
@@ -73,9 +72,9 @@ if [ "$assignPermissionSet" == 1 ] && [ "$errFlag" -eq 0 ]; then
 			echo "Permission Set already assigned"
 		fi
 	else
-		cat logs/errorPermSetAssign.txt
 		errFlag=1
 	fi
+	cat logs/errorPermSetAssign.txt
 	echo $sectionDelimiter
 fi
 
