@@ -1,0 +1,9 @@
+[1mERROR: [22m [31m[31mExecution failed.
+[31m[39m
+ [31m▸[39m    [1mERROR: [22mSystem.DmlException: Insert failed. First exception on row
+ [31m▸[39m    0; first error: DUPLICATES_DETECTED, Duplicate Alert: []
+ [31m▸[39m    [1mERROR: [22mClass.FscDemoPack_DataSetup.createDemoContacts: line 770,
+ [31m▸[39m    column 1
+ [31m▸[39m    Class.FscDemoPack_DataSetup.createAllDemoData: line 46, column 1
+ [31m▸[39m    AnonymousBlock: line 1, column 1
+ [31m▸[39m    AnonymousBlock: line 1, column 1
