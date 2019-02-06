@@ -101,7 +101,7 @@ if [ $errFlag -eq 0 ]; then
 	echo $sectionDelimiter
 	echo open scratch org
 	echo sfdx force:org:open -u $alias
-	//sfdx force:org:open -u $alias 2> logs/errorOrgOpen.txt
+	sfdx force:org:open -u $alias 2> logs/errorOrgOpen.txt
 	output=$(grep -e"ERROR\b:" logs/errorOrgOpen.txt)
 	echo $output
 	if [ -z "$output" ]; then
