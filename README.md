@@ -12,11 +12,17 @@ Instructions to Run the Scripts:
 4) Checkout the BashScripts branch: 
    * git checkout BashScripts
 
-5) Open the orgInit.sh file and edit: 
+5) Go to the config folder > Open the config.sh file and edit: 
    *Set the variable “devhub” at the beginning of the script to point to your devhub alias
     * (To set an alias for your devhub use this command: sfdx force:alias:set YourAlias=username@example.com)
-    
-6) Run the orgInit.sh script
+   * Set the variable "markScratchOrgForDeletion"
+      *0=existing scratch org in your devhub will not be deleted
+      *1=existing scratch org in your devhub will be deleted
+
+6) Open the orgInit.sh script and identify which of the scripts you want to run
+   *By default they are all set =1 so that they will all run consecutively  
+
+7) Run the orgInit.sh script
    * drag the orgInit.sh file to your terminal window (*use the same terminal window where you completed steps 1-4)
    * hit enter
 
