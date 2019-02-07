@@ -11,7 +11,17 @@ public class FscDemoPack_DataSetup {
   // Get the RecordType IDs for this org.
   public static Map<String,RecordType> recordTypes = getFscRecordTypeIds();
 
-
+    public static void preSetupForDemoData() {
+        // Pre-setup: ENable Person Account
+        // Separating it because Custom Setting doesn't show in records below if inserted in same transaction
+        // - Add record in FinServ__UsePersonAccount__c  Custom Setting
+        // - CUstom Metadata type will be uploaded with other metadata
+        // - Required otherwise PersonAccount records will not be marked as "Individual" (in FinServ__IndividualType__c) and can't be used in Financial Goal
+        
+        
+        enablePersonAccountRecordType();
+   
+    }
   //───────────────────────────────────────────────────────────────────────────┐
   /**
    * @method      createAllDemoData
@@ -37,7 +47,7 @@ public class FscDemoPack_DataSetup {
     // 8. Create "Reciprical Roles" <--This one may be important (FinServ__ReciprocalRole__c)
     // 9. Create "Leads and Referrals" (Lead)
     // 11. More?
-
+   
     // 1. Create Accounts (Person, Business, and Houshold/Group Accounts)
     Map<String,Account> demoAccounts = createDemoAccounts();
 
@@ -110,6 +120,19 @@ public class FscDemoPack_DataSetup {
 
   }
 
+    public static void enablePersonAccountRecordType(){
+        //Enable Person Account in FSC as per https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_admin_guide.meta/financial_services_cloud_admin_guide/fsc_admin_enable_person_acct.htm
+        //Insert record in Custom Setting
+        try{
+            FinServ__UsePersonAccount__c usePersonAccount = new FinServ__UsePersonAccount__c();
+            usePersonAccount.Name = 'Use Person Account';
+            usePersonAccount.FinServ__Enable__c = true;
+            insert usePersonAccount;
+        }catch(System.DmlException e){
+            System.debug (e.getMessage());
+        }
+        
+    }
   //───────────────────────────────────────────────────────────────────────────┐
   /**
    * @method      createDemoAccountAccountRelations
