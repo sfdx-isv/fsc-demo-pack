@@ -20,7 +20,7 @@ Instructions to Run the Scripts:
       * 1=existing scratch org in your devhub will be deleted
 
 6) Open the orgInit.sh script and identify which of the scripts you want to run
-   *By default they are all set =1 so that they will all run consecutively  
+      * By default they are all set =1 so that they will all run consecutively  
 
 7) Run the orgInit.sh script
    * drag the orgInit.sh file to your terminal window (*use the same terminal window where you completed steps 1-4)
