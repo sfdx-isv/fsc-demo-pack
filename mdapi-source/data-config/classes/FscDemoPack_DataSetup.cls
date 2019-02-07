@@ -1259,14 +1259,18 @@ public class FscDemoPack_DataSetup {
     // Create and initialize the Map collection for our Financial Goals.
     Map<String, FinServ__FinancialGoal__c> demoFinancialGoals = new Map<String, FinServ__FinancialGoal__c>();
 
-    /*
+    
+//      FinServ__PrimaryOwner__c              = demoAccounts.get('Rachel_Adams').id,
+//      FinServ__Household__c                 = demoAccounts.get('Adams_Household').id,
+      System.debug(demoAccounts.get('Rachel_Adams'));
+      System.debug(demoAccounts.get('Adams_Household'));
     // Define Financail Goals record for "Adams Household - Tahoe Vacation Home"
     demoFinancialGoals.put('Adams_Household_TahoeVacationHome', new FinServ__FinancialGoal__c(
       Name                                  = 'Tahoe Vacation Home (Sample)',
       FinServ__ActualValue__c               = 280000,
       //FinServ__Description__c               = '?????',
       FinServ__PrimaryOwner__c              = demoAccounts.get('Rachel_Adams').id,
-      FinServ__Household__c                 = demoAccounts.get('Adams_Household').id,
+      //FinServ__Household__c                 = demoAccounts.get('Adams_Household').id,
       FinServ__Status__c                    = 'In Progress',
       FinServ__TargetDate__c                = Date.parse('12/04/2020'),
       FinServ__TargetValue__c               = 450000,
@@ -1287,7 +1291,7 @@ public class FscDemoPack_DataSetup {
       FinServ__Type__c                      = 'Other'
     ));
     //*/
-    /*
+    
     // Define Financail Goals record for "Adams Household - Matts Education"
     demoFinancialGoals.put('Adams_Household_MattsEducation', new FinServ__FinancialGoal__c(
       Name                                  = 'Education Savings for Matt (Sample)',
@@ -1300,8 +1304,9 @@ public class FscDemoPack_DataSetup {
       FinServ__TargetValue__c               = 300000,
       FinServ__Type__c                      = 'Education'
     ));
-    //*/
-    /*
+    //*/ 
+    
+    
     // Define Financail Goals record for "Adams Household - Retirement Goals"
     demoFinancialGoals.put('Adams_Household_RetirementGoals', new FinServ__FinancialGoal__c(
       Name                                  = 'Retirement Goals (Sample)',

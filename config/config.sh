@@ -10,6 +10,8 @@ markScratchOrgForDeletion=1
 scratchOrgDays=15
 #alias of scratch org
 alias=FSCADK1
+#Set this as default alias
+defaultAlias=1
 #config file for scratch org
 config=config/demo-scratch-def.json
 #package versions 

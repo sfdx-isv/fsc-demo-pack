@@ -24,6 +24,14 @@ output=$(grep -e"ERROR\b:" logs/errorScratchOrgCreate.txt)
 echo $output
 if [ -z "$output" ]; then
 	echo Success: Scratch Org Created
+
+	if [ "$defaultAlias" == 1 ]; then
+		echo Setting $alias as default
+		echo sfdx force:config:set defaultusername=$alias
+		sfdx force:config:set defaultusername=$alias 2> logs/errorScratchOrgCreateDefaultUser.txt
+		output=$(grep -e"ERROR\b:" logs/errorScratchOrgCreateDefaultUser.txt)
+		echo $output
+	fi
 	#No Error
 	errFlag=0
 else

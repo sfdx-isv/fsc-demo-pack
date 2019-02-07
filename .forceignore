@@ -23,3 +23,5 @@
 
 # Ignore all .md files (like README.md)
 **.md
+**profiles
+**settings
