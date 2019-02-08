@@ -82,6 +82,24 @@ if [ "$createDemoData" == 1 ] && [ "$errFlag" -eq 0 ]; then
 	echo $sectionDelimiter
 
 	echo Generate Demo Data
+	echo sfdx force:apex:execute -f config/create-demo-data-setup.apex -u $alias
+	sfdx force:apex:execute -f config/create-demo-data-setup.apex -u $alias 2> logs/errorDemoDataLoadSetup.txt
+	output=$(grep -e"ERROR\b:" logs/errorDemoDataLoadSetup.txt)
+	echo $output
+	if [ -z "$output" ]; then
+		echo Demo Data Setup Completed
+		errFlag=0
+	else
+		echo Error while setting up for demo data
+		errFlag=1
+	fi
+	echo $sectionDelimiter
+fi
+
+if [ "$createDemoData" == 1 ] && [ "$errFlag" -eq 0 ]; then
+	echo $sectionDelimiter
+
+	echo Generate Demo Data
 	echo sfdx force:apex:execute -f config/create-demo-data.apex -u $alias
 	sfdx force:apex:execute -f config/create-demo-data.apex -u $alias 2> logs/errorDemoDataLoad.txt
 	output=$(grep -e"ERROR\b:" logs/errorDemoDataLoad.txt)
