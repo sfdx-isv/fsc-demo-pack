@@ -23,6 +23,12 @@ Instructions to Run the Scripts:
       * By default they are all set =1 so that they will all run consecutively  
 
 7) Run the orgInit.sh script
-   * drag the orgInit.sh file to your terminal window (*use the same terminal window where you completed steps 1-4)
+   * Type "./orgInit.sh", press enter and it will open newly created scratch org
    * hit enter
 
+All commands together (after you update DevHub in config/config.sh)
+```
+git clone https://github.com/Vchalem/fsc-demo-pack.git
+cd fsc-demo-pack.
+git checkout BashScripts
+./orgInit.sh
