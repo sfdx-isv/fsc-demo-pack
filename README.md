@@ -27,7 +27,8 @@ Instructions to Run the Scripts:
    * hit enter
 
 All commands together
-* git clone https://github.com/Vchalem/fsc-demo-pack.git
-* cd fsc-demo-pack.
-* git checkout BashScripts
-* ./orgInit.sh
+```
+git clone https://github.com/Vchalem/fsc-demo-pack.git
+cd fsc-demo-pack.
+git checkout BashScripts
+./orgInit.sh
