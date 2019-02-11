@@ -26,7 +26,7 @@ Instructions to Run the Scripts:
    * Type "./orgInit.sh", press enter and it will open newly created scratch org
    * hit enter
 
-All commands together
+All commands together (after you update DevHub in config/config.sh)
 ```
 git clone https://github.com/Vchalem/fsc-demo-pack.git
 cd fsc-demo-pack.
