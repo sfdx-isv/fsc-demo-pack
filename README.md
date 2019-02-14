@@ -32,5 +32,5 @@ All commands together (after you update DevHub in config/config.sh)
 ```
 git clone https://github.com/Vchalem/fsc-demo-pack.git
 cd fsc-demo-pack.
-git checkout BashScripts
+git checkout BashScripts2
 ./orgInit.sh
