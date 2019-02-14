@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__WalletShare__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>ROUND(((FinServ__TotalHeldFinAcctsPrimaryOwner__c + FinServ__TotalHeldFinAcctsJointOwner__c) / IF( (FinServ__TotalFinAcctsPrimaryOwner__c+FinServ__TotalFinAcctsJointOwner__c)=0,1,(FinServ__TotalFinAcctsPrimaryOwner__c+FinServ__TotalFinAcctsJointOwner__c))), 2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wallet Share</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>

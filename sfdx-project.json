@@ -3,7 +3,7 @@
     {"path": "sfdx-source/force-app", "default": true}
   ],
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "43.0",
+  "sourceApiVersion": "45.0",
   "plugins": {
     "sfdxFalcon": {
       "producerAlias"   : "sfdx-isv",

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__NonPortalUserReferrer</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+                NOT(ISBLANK(FinServ__ReferredByUser__c)),
+                NOT(ISPICKVAL(FinServ__ReferredByUser__r.UserType, &#39;Standard&#39;))
+            )</errorConditionFormula>
+    <errorDisplayField>FinServ__ReferredByUser__c</errorDisplayField>
+    <errorMessage>Internal referrers must be internal Salesforce users.</errorMessage>
+</ValidationRule>

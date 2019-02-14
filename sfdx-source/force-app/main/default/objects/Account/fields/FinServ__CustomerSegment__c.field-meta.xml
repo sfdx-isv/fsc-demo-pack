@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__CustomerSegment__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Customer Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mass Market</fullName>
+                <default>false</default>
+                <label>Mass Market</label>
+            </value>
+            <value>
+                <fullName>Mass Affluent</fullName>
+                <default>false</default>
+                <label>Mass Affluent</label>
+            </value>
+            <value>
+                <fullName>Wealth Accumulation</fullName>
+                <default>false</default>
+                <label>Wealth Accumulation</label>
+            </value>
+            <value>
+                <fullName>Transactional</fullName>
+                <default>false</default>
+                <label>Transactional</label>
+            </value>
+            <value>
+                <fullName>Long Term Growth</fullName>
+                <default>false</default>
+                <label>Long Term Growth</label>
+            </value>
+            <value>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+                <label>Borrower</label>
+            </value>
+            <value>
+                <fullName>Millennial</fullName>
+                <default>false</default>
+                <label>Millennial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
