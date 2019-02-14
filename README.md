@@ -10,7 +10,7 @@ Instructions to Run the Scripts:
     * cd fsc-demo-pack
 
 4) Checkout the BashScripts branch: 
-   * git checkout BashScripts
+   * git checkout BashScripts2
 
 5) In finder: Go to the repo fsc-demo-pack > go to the config folder > Open the config.sh file and edit: 
    * Set the variable “devhub” at the beginning of the script to point to your devhub alias
