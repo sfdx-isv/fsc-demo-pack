@@ -18,6 +18,8 @@ Instructions to Run the Scripts:
    * Set the variable "markScratchOrgForDeletion"
       * 0=existing scratch org in your devhub will not be deleted
       * 1=existing scratch org in your devhub will be deleted
+   * Set the variables for the install packages to point to the current release for the FSC Packages you are installing 
+  
 
 6) Open the orgInit.sh script and identify which of the scripts you want to run
       * By default they are all set =1 so that they will all run consecutively  
