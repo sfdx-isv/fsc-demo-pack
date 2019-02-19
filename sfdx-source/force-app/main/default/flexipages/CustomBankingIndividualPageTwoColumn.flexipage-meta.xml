@@ -435,9 +435,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>adktest</componentName>
-        </componentInstances>
-        <componentInstances>
             <componentInstanceProperties>
                 <name>tabs</name>
                 <value>Facet-5f89df30-3a05-4476-a564-87e67d4f4247</value>
