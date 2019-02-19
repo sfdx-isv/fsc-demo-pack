@@ -1,5 +1,4 @@
-WARNING: apiVersion configuration overridden at 45.0
 === Permsets Assigned
 USERNAME                       PERMISSION SET ASSIGNMENT
 ─────────────────────────────  ──────────────────────────────
-test-okkxiirsiffu@example.com  FinancialServicesCloudStandard
+test-vuob7hzjated@example.com  FinancialServicesCloudStandard

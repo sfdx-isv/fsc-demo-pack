@@ -2,7 +2,7 @@
 
 #***variables****(will be part of heroku deployer..)
 #devhub
-devhub=my-hub-org
+devhub=MyDevHubTE
 
 #Mark existing org for deletion
 markScratchOrgForDeletion=1

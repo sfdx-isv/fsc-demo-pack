@@ -54,13 +54,13 @@ if [ "$assignPermissionSet" == 1 ] && [ "$errFlag" -eq 0 ]; then
 	echo Assign Permission Set
 	echo sfdx force:user:permset:assign -n FinancialServicesCloudStandard -u $alias
 	sfdx force:user:permset:assign -n FinancialServicesCloudStandard -u $alias &> logs/errorPermSetAssign.txt
-	output=$(grep -e"ERROR\b:" logs/errorPermSetAssign.txt)
+	output=$(grep -i -e"ERROR\b:" logs/errorPermSetAssign.txt)
 	echo $output
 	if [ -z "$output" ]; then
-		output=$(grep -e"Duplicate PermissionSetAssignment" logs/errorPermSetAssign.txt)
+		output=$(grep -i -e"Duplicate PermissionSetAssignment" logs/errorPermSetAssign.txt)
 		echo $output
 		if [ -z "$output" ]; then
-			output=$(grep -e"Failures" logs/errorPermSetAssign.txt)
+			output=$(grep -i -e"Failures" logs/errorPermSetAssign.txt)
 			echo $output
 			if [ -z "$output" ]; then
 				errFlag=0
@@ -84,7 +84,7 @@ if [ "$createDemoData" == 1 ] && [ "$errFlag" -eq 0 ]; then
 	echo Generate Demo Data
 	echo sfdx force:apex:execute -f config/create-demo-data-setup.apex -u $alias
 	sfdx force:apex:execute -f config/create-demo-data-setup.apex -u $alias 2> logs/errorDemoDataLoadSetup.txt
-	output=$(grep -e"ERROR\b:" logs/errorDemoDataLoadSetup.txt)
+	output=$(grep -i -e"ERROR\b:" logs/errorDemoDataLoadSetup.txt)
 	echo $output
 	if [ -z "$output" ]; then
 		echo Demo Data Setup Completed
@@ -102,7 +102,7 @@ if [ "$createDemoData" == 1 ] && [ "$errFlag" -eq 0 ]; then
 	echo Generate Demo Data
 	echo sfdx force:apex:execute -f config/create-demo-data.apex -u $alias
 	sfdx force:apex:execute -f config/create-demo-data.apex -u $alias 2> logs/errorDemoDataLoad.txt
-	output=$(grep -e"ERROR\b:" logs/errorDemoDataLoad.txt)
+	output=$(grep -i -e"ERROR\b:" logs/errorDemoDataLoad.txt)
 	echo $output
 	if [ -z "$output" ]; then
 		echo Demo Data Loaded
@@ -119,7 +119,7 @@ if [ $errFlag -eq 0 ]; then
 	echo open scratch org
 	echo sfdx force:org:open -u $alias
 	sfdx force:org:open -u $alias 2> logs/errorOrgOpen.txt
-	output=$(grep -e"ERROR\b:" logs/errorOrgOpen.txt)
+	output=$(grep -i -e"ERROR\b:" logs/errorOrgOpen.txt)
 	echo $output
 	if [ -z "$output" ]; then
 		errFlag=0

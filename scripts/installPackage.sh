@@ -13,7 +13,7 @@ else
 	echo Installing Package
 	echo sfdx force:package:install --package $pkg -w $pkgInstallWaitTime -u $alias
 	sfdx force:package:install --package $pkg -w $pkgInstallWaitTime -u $alias 2> logs/errorPkgInstall.txt
-	output=$(grep -e"ERROR\b:" logs/errorPkgInstall.txt)
+	output=$(grep -i -e"ERROR\b:" logs/errorPkgInstall.txt)
 	echo $output
 	if [ -z "$output" ]; then
 		echo "Package Installed: $pkg"
