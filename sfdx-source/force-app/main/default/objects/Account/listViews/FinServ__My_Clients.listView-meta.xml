@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__My_Clients</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>FinServ__TotalFinancialAccounts__c</columns>
+    <columns>FinServ__AUM__c</columns>
+    <columns>FinServ__WalletShare__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.FinServ__IndustriesIndividual</value>
+    </filters>
+    <filters>
+        <field>FinServ__IndividualType__c</field>
+        <operation>equals</operation>
+        <value>Individual</value>
+    </filters>
+    <label>My Clients</label>
+    <language>en_US</language>
+</ListView>

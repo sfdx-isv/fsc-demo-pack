@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__CreditRating__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Credit Rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+                <label>Excellent</label>
+            </value>
+            <value>
+                <fullName>Good</fullName>
+                <default>false</default>
+                <label>Good</label>
+            </value>
+            <value>
+                <fullName>Fair</fullName>
+                <default>false</default>
+                <label>Fair</label>
+            </value>
+            <value>
+                <fullName>Poor</fullName>
+                <default>false</default>
+                <label>Poor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

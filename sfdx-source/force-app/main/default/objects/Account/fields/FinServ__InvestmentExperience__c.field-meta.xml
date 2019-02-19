@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__InvestmentExperience__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Client&#39;s investment experience.</description>
+    <externalId>false</externalId>
+    <label>Investment Experience</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Experienced</fullName>
+                <default>false</default>
+                <label>Experienced</label>
+            </value>
+            <value>
+                <fullName>Moderately Experienced</fullName>
+                <default>false</default>
+                <label>Moderately Experienced</label>
+            </value>
+            <value>
+                <fullName>Moderately Inexperienced</fullName>
+                <default>false</default>
+                <label>Moderately Inexperienced</label>
+            </value>
+            <value>
+                <fullName>Inexperienced</fullName>
+                <default>false</default>
+                <label>Inexperienced</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

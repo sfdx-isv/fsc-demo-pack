@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__InvestmentObjectives__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Client&#39;s preference for growth versus income investments.</description>
+    <externalId>false</externalId>
+    <label>Investment Objectives</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conservative Income</fullName>
+                <default>false</default>
+                <label>Conservative Income</label>
+            </value>
+            <value>
+                <fullName>Income</fullName>
+                <default>false</default>
+                <label>Income</label>
+            </value>
+            <value>
+                <fullName>Balanced</fullName>
+                <default>false</default>
+                <label>Balanced</label>
+            </value>
+            <value>
+                <fullName>Growth</fullName>
+                <default>false</default>
+                <label>Growth</label>
+            </value>
+            <value>
+                <fullName>Aggressive Growth</fullName>
+                <default>false</default>
+                <label>Aggressive Growth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

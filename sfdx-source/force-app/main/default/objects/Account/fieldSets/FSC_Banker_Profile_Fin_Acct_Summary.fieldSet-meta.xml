@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSC_Banker_Profile_Fin_Acct_Summary</fullName>
+    <description>Personal Banker profile&#39;s Financials tab</description>
+    <displayedFields>
+        <field>FinServ__TotalBankDeposits__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FinServ__TotalOutstandingCredit__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FinServ__TotalNumberOfFinAccounts__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Financial Accounts Summary</label>
+</FieldSet>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__PersonalInterests__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Personal Interests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cooking</fullName>
+                <default>false</default>
+                <label>Cooking</label>
+            </value>
+            <value>
+                <fullName>College Basketball</fullName>
+                <default>false</default>
+                <label>College Basketball</label>
+            </value>
+            <value>
+                <fullName>Environment</fullName>
+                <default>false</default>
+                <label>Environment</label>
+            </value>
+            <value>
+                <fullName>Hiking</fullName>
+                <default>false</default>
+                <label>Hiking</label>
+            </value>
+            <value>
+                <fullName>Biking</fullName>
+                <default>false</default>
+                <label>Biking</label>
+            </value>
+            <value>
+                <fullName>Wine</fullName>
+                <default>false</default>
+                <label>Wine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

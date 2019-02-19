@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__SingleReferredByEntryByRecord</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+                ISBLANK(FinServ__ConversionDateTime__c), 
+                AND( 
+                    NOT(ISBLANK(FinServ__ReferredByUser__c)), 
+                    NOT(ISBLANK(FinServ__ReferredByContact__c)) 
+                ) 
+            )</errorConditionFormula>
+    <errorDisplayField>FinServ__ReferredByContact__c</errorDisplayField>
+    <errorMessage>Enter an internal referrer or an external referrer. You can list only one referrer for each referral.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/adktest": [
+                "adktest/adktest.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ]
+}

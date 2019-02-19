@@ -112,7 +112,7 @@
     -->
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>FinServ__BankingIndividualPageOneColumn</content>
+        <content>CustomBankingIndividualPageTwoColumn</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>PersonAccount.PersonAccount</recordType>

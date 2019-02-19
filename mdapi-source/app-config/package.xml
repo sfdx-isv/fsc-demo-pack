@@ -20,5 +20,13 @@
         <members>*</members>
         <name>StandardValueSet</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
     <version>43.0</version>
 </Package>

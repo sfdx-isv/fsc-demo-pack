@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__ReviewFrequency__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Review Frequency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Annually</fullName>
+                <default>false</default>
+                <label>Annually</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
