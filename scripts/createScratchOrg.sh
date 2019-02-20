@@ -15,7 +15,8 @@ if [ "$markScratchOrgForDeletion" == 1 ]; then
 	output=$(grep -i -e"ERROR\b:" logs/errorScratchOrgDelete.txt)
 	if [ ! -z "$output" ]; then
 		echo Error marking org for deletion
-		errFlag=1
+		#Ignoring the error for deletion only
+		#errFlag=1
 	fi
 fi
 
