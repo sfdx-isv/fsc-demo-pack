@@ -1,6 +1,0 @@
-[1mERROR: [22m [31mNo org configuration found for name MyDevHubTE2.[39m 
-
-[34m[1mTry this:[22m[39m
-Run the "sfdx force:auth" commands with --setdefaultusername to connect to an org and set it as your default org.
-Run "force:org:create" with --setdefaultusername to create a scratch org and set it as your default org.
-Run "sfdx force:config:set defaultusername=<username>" to set your default username.

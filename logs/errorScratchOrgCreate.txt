@@ -1,6 +1,0 @@
-[1mERROR: [22m [31mNo org configuration found for name MyDevHubTE2.[39m 
-
-[34m[1mTry this:[22m[39m
-Run the "sfdx force:auth" commands with --setdefaultdevhubusername to connect to a Dev Hub org and set it as your default Dev Hub.
-Run "force:org:list" to see a list of locally registered orgs.
-Run "sfdx force:config:set defaultdevhubusername=<username>" to set your default Dev Hub username.
