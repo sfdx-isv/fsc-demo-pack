@@ -1,0 +1,20 @@
+{
+  "orgName": "FSC Demo Pack",
+  "country": "US",
+  "edition": "Developer",
+  "description": "Contains a baseline demo of the Financial Services Cloud app.",
+  "hasSampleData": false,
+  "language": "en_US",
+  "features": [
+    "Communities",
+    "ContactsToMultipleAccounts",
+    "PersonAccounts"
+  ],
+  "orgPreferences": {
+    "enabled": [
+      "S1DesktopEnabled",
+      "ChatterEnabled",
+      "NetworksEnabled"      
+    ]
+  }
+}

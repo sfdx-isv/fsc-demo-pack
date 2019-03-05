@@ -27,3 +27,4 @@ anonymous.apex
 
 #Ignore files in logs/ folder so those are not submiited to github by accident as those contain org related information (Including session ID sometimes)
 logs/
+sfdx-source/force-app/main/default/classes/FSC*
