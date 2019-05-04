@@ -2,7 +2,7 @@
   "recipeName":     "FSC Demo Pack",
   "description":    "A Recipe for building Financial Service Cloud (FSC) demo orgs",
   "recipeType":     "appx:demo-recipe",
-  "recipeVersion":  "1.0.1",
+  "recipeVersion":  "1.0.2",
   "schemaVersion":  "0.1.2",
   "options":  {
     "haltOnError":      true,
@@ -27,20 +27,20 @@
       "recipeSteps": [
         { 
           "stepName":     "Install FSC Managed Package",
-          "description":  "Installs version 216.1.0 of the FSC managed package",
+          "description":  "Installs version 218.5.1 of the FSC managed package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Financial Services Cloud (Managed Package), Version 216.1.0",
-            "packageVersionId": "04t80000000jZjl"
+            "packageName":      "Financial Services Cloud (Managed Package), Version 218.5.1",
+            "packageVersionId": "04t1E000000ckge"
           }
         },
         {
           "stepName":     "Install FSC Extension Package (unmanaged)",
-          "description":  "Installs version 216.0 of the unmanaged FSC Extension Package",
+          "description":  "Installs version 218.1 of the unmanaged FSC Extension Package",
           "action":       "install-package",
           "options": {
-            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 216.0",
-            "packageVersionId": "04t80000001AWVh"
+            "packageName":      "Financial Services Cloud (Unmanaged Package), Version 218.1",
+            "packageVersionId": "04t1E000001Iql5"
           }
         }
       ]
