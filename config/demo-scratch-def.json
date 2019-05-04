@@ -10,11 +10,11 @@
     "ContactsToMultipleAccounts",
     "PersonAccounts"
   ],
-  "orgPreferences": {
-    "enabled": [
-      "S1DesktopEnabled",
-      "ChatterEnabled",
-      "NetworksEnabled"      
-    ]
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true,
+      "chatterEnabled": true,
+      "networksEnabled": true
+    }    
   }
 }
