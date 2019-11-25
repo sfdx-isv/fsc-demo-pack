@@ -9,14 +9,19 @@
     "Communities",
     "ContactsToMultipleAccounts",
     "PersonAccounts",
-    "ActionPlans"
-
+    "IndustriesActionPlan",
+    "FinancialServicesUser:5",
+    "DocumentChecklist"
   ],
-  "orgPreferences": {
-    "enabled": [
-      "S1DesktopEnabled",
-      "ChatterEnabled",
-      "NetworksEnabled"      
-    ]
-  }
+   "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "chatterSettings": {
+            "enableChatter": true
+        },
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        }
+    }
 }
