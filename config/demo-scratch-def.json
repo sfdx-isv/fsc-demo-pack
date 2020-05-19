@@ -8,7 +8,9 @@
   "features": [
     "Communities",
     "ContactsToMultipleAccounts",
-    "PersonAccounts"
+    "PersonAccounts",
+    "FinancialServicesUser:10",
+    "FinancialServicesCommunityUser:10"    
   ],
   "settings": {
     "orgPreferenceSettings": {
