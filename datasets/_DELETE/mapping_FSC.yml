@@ -1,0 +1,368 @@
+Insert Account:
+  sf_object: Account
+  table: Account
+  fields:
+    Id: sf_id
+    Website: Website
+    Type: Type
+    TickerSymbol: TickerSymbol
+    Site: Site
+    SicDesc: SicDesc
+    Sic: Sic
+    ShippingStreet: ShippingStreet
+    ShippingState: ShippingState
+    ShippingPostalCode: ShippingPostalCode
+    ShippingLongitude: ShippingLongitude
+    ShippingLatitude: ShippingLatitude
+    ShippingGeocodeAccuracy: ShippingGeocodeAccuracy
+    ShippingCountry: ShippingCountry
+    ShippingCity: ShippingCity
+    Salutation: Salutation
+    Rating: Rating
+    Phone: Phone
+    PersonTitle: PersonTitle
+    PersonOtherStreet: PersonOtherStreet
+    PersonOtherState: PersonOtherState
+    PersonOtherPostalCode: PersonOtherPostalCode
+    PersonOtherPhone: PersonOtherPhone
+    PersonOtherLongitude: PersonOtherLongitude
+    PersonOtherLatitude: PersonOtherLatitude
+    PersonOtherGeocodeAccuracy: PersonOtherGeocodeAccuracy
+    PersonOtherCountry: PersonOtherCountry
+    PersonOtherCity: PersonOtherCity
+    PersonMobilePhone: PersonMobilePhone
+    PersonMailingStreet: PersonMailingStreet
+    PersonMailingState: PersonMailingState
+    PersonMailingPostalCode: PersonMailingPostalCode
+    PersonMailingLongitude: PersonMailingLongitude
+    PersonMailingLatitude: PersonMailingLatitude
+    PersonMailingGeocodeAccuracy: PersonMailingGeocodeAccuracy
+    PersonMailingCountry: PersonMailingCountry
+    PersonMailingCity: PersonMailingCity
+    PersonLeadSource: PersonLeadSource
+    PersonHomePhone: PersonHomePhone
+    PersonEmail: PersonEmail
+    PersonBirthdate: PersonBirthdate
+    PersonAssistantPhone: PersonAssistantPhone
+    PersonAssistantName: PersonAssistantName
+    Ownership: Ownership
+    NumberOfEmployees: NumberOfEmployees
+    Name: Name
+    LastName: LastName
+    Jigsaw: Jigsaw
+    Industry: Industry
+    FirstName: FirstName
+    FinServ__WeddingAnniversary__pc: FinServ__WeddingAnniversary__pc
+    FinServ__Twitter__pc: FinServ__Twitter__pc
+    FinServ__TotalRevenue__c: FinServ__TotalRevenue__c
+    FinServ__TotalPremium__c: FinServ__TotalPremium__c
+    FinServ__TotalOutstandingCreditPrimaryOwner__c: FinServ__TotalOutstandingCreditPrimaryOwner__c
+    FinServ__TotalOutstandingCreditJointOwner__c: FinServ__TotalOutstandingCreditJointOwner__c
+    FinServ__TotalNumberOfFinAccountsPrimaryOwner__c: FinServ__TotalNumberOfFinAccountsPrimaryOwner__c
+    FinServ__TotalNumberOfFinAccountsJointOwner__c: FinServ__TotalNumberOfFinAccountsJointOwner__c
+    FinServ__TotalNonfinancialAssetsPrimaryOwner__c: FinServ__TotalNonfinancialAssetsPrimaryOwner__c
+    FinServ__TotalNonfinancialAssetsJointOwner__c: FinServ__TotalNonfinancialAssetsJointOwner__c
+    FinServ__TotalLiabilitiesPrimaryOwner__c: FinServ__TotalLiabilitiesPrimaryOwner__c
+    FinServ__TotalLiabilitiesJointOwner__c: FinServ__TotalLiabilitiesJointOwner__c
+    FinServ__TotalInvestmentsPrimaryOwner__c: FinServ__TotalInvestmentsPrimaryOwner__c
+    FinServ__TotalInvestmentsJointOwner__c: FinServ__TotalInvestmentsJointOwner__c
+    FinServ__TotalInsurancePrimaryOwner__c: FinServ__TotalInsurancePrimaryOwner__c
+    FinServ__TotalInsuranceJointOwner__c: FinServ__TotalInsuranceJointOwner__c
+    FinServ__TotalHeldFinAcctsPrimaryOwner__c: FinServ__TotalHeldFinAcctsPrimaryOwner__c
+    FinServ__TotalHeldFinAcctsJointOwner__c: FinServ__TotalHeldFinAcctsJointOwner__c
+    FinServ__TotalFinAcctsPrimaryOwner__c: FinServ__TotalFinAcctsPrimaryOwner__c
+    FinServ__TotalFinAcctsJointOwner__c: FinServ__TotalFinAcctsJointOwner__c
+    FinServ__TotalBankDepositsPrimaryOwner__c: FinServ__TotalBankDepositsPrimaryOwner__c
+    FinServ__TotalBankDepositsJointOwner__c: FinServ__TotalBankDepositsJointOwner__c
+    FinServ__TotalAUMPrimaryOwner__c: FinServ__TotalAUMPrimaryOwner__c
+    FinServ__TotalAUMJointOwner__c: FinServ__TotalAUMJointOwner__c
+    FinServ__TimeHorizon__c: FinServ__TimeHorizon__c
+    FinServ__TaxId__pc: FinServ__TaxId__pc
+    FinServ__TaxBracket__pc: FinServ__TaxBracket__pc
+    FinServ__Status__c: FinServ__Status__c
+    FinServ__SourceSystemId__pc: FinServ__SourceSystemId__pc
+    FinServ__SourceSystemId__c: FinServ__SourceSystemId__c
+    FinServ__ServiceModel__c: FinServ__ServiceModel__c
+    FinServ__SecondaryLanguage__pc: FinServ__SecondaryLanguage__pc
+    FinServ__SecondaryCitizenship__pc: FinServ__SecondaryCitizenship__pc
+    FinServ__RiskTolerance__c: FinServ__RiskTolerance__c
+    FinServ__ReviewFrequency__c: FinServ__ReviewFrequency__c
+    FinServ__RelationshipStartDate__c: FinServ__RelationshipStartDate__c
+    FinServ__ReferrerScore__pc: FinServ__ReferrerScore__pc
+    FinServ__PrimaryLanguage__pc: FinServ__PrimaryLanguage__pc
+    FinServ__PrimaryCitizenship__pc: FinServ__PrimaryCitizenship__pc
+    FinServ__PrimaryAddressIsShipping__pc: FinServ__PrimaryAddressIsShipping__pc
+    FinServ__PrimaryAddressIsOther__pc: FinServ__PrimaryAddressIsOther__pc
+    FinServ__PrimaryAddressIsMailing__pc: FinServ__PrimaryAddressIsMailing__pc
+    FinServ__PrimaryAddressIsBilling__pc: FinServ__PrimaryAddressIsBilling__pc
+    FinServ__PreferredName__pc: FinServ__PreferredName__pc
+    FinServ__PersonalInterests__c: FinServ__PersonalInterests__c
+    FinServ__Occupation__pc: FinServ__Occupation__pc
+    FinServ__NumberOfDependents__pc: FinServ__NumberOfDependents__pc
+    FinServ__NumberOfChildren__pc: FinServ__NumberOfChildren__pc
+    FinServ__Notes__c: FinServ__Notes__c
+    FinServ__NextReview__c: FinServ__NextReview__c
+    FinServ__NextLifeEvent__pc: FinServ__NextLifeEvent__pc
+    FinServ__NextInteraction__c: FinServ__NextInteraction__c
+    FinServ__NetWorth__c: FinServ__NetWorth__c
+    FinServ__MotherMaidenName__pc: FinServ__MotherMaidenName__pc
+    FinServ__MostUsedChannel__pc: FinServ__MostUsedChannel__pc
+    FinServ__MobileVerified__pc: FinServ__MobileVerified__pc
+    FinServ__MarketingSegment__c: FinServ__MarketingSegment__c
+    FinServ__MarketingOptOut__pc: FinServ__MarketingOptOut__pc
+    FinServ__MaritalStatus__pc: FinServ__MaritalStatus__pc
+    FinServ__LinkedIn__pc: FinServ__LinkedIn__pc
+    FinServ__LifetimeValue__c: FinServ__LifetimeValue__c
+    FinServ__LastUsedChannel__c: FinServ__LastUsedChannel__c
+    FinServ__LastTransactionDatePrimaryOwner__c: FinServ__LastTransactionDatePrimaryOwner__c
+    FinServ__LastTransactionDateJointOwner__c: FinServ__LastTransactionDateJointOwner__c
+    FinServ__LastReview__c: FinServ__LastReview__c
+    FinServ__LastInteraction__c: FinServ__LastInteraction__c
+    FinServ__LastFourDigitSSN__pc: FinServ__LastFourDigitSSN__pc
+    FinServ__LanguagesSpoken__pc: FinServ__LanguagesSpoken__pc
+    FinServ__KYCStatus__c: FinServ__KYCStatus__c
+    FinServ__KYCDate__c: FinServ__KYCDate__c
+    FinServ__InvestmentObjectives__c: FinServ__InvestmentObjectives__c
+    FinServ__InvestmentExperience__c: FinServ__InvestmentExperience__c
+    FinServ__IndividualType__pc: FinServ__IndividualType__pc
+    FinServ__IndividualType__c: FinServ__IndividualType__c
+    FinServ__HomePhoneVerified__pc: FinServ__HomePhoneVerified__pc
+    FinServ__HomeOwnership__pc: FinServ__HomeOwnership__pc
+    FinServ__Gender__pc: FinServ__Gender__pc
+    FinServ__FinancialInterests__c: FinServ__FinancialInterests__c
+    FinServ__FaxVerified__pc: FinServ__FaxVerified__pc
+    FinServ__Facebook__pc: FinServ__Facebook__pc
+    FinServ__EmployedSince__pc: FinServ__EmployedSince__pc
+    FinServ__EmailVerified__pc: FinServ__EmailVerified__pc
+    FinServ__CustomerType__c: FinServ__CustomerType__c
+    FinServ__CustomerTimezone__pc: FinServ__CustomerTimezone__pc
+    FinServ__CustomerSegment__c: FinServ__CustomerSegment__c
+    FinServ__CustomerID__c: FinServ__CustomerID__c
+    FinServ__CurrentEmployer__pc: FinServ__CurrentEmployer__pc
+    FinServ__CreditScore__c: FinServ__CreditScore__c
+    FinServ__CreditRating__c: FinServ__CreditRating__c
+    FinServ__CreatedFromLead__pc: FinServ__CreatedFromLead__pc
+    FinServ__CountryOfResidence__pc: FinServ__CountryOfResidence__pc
+    FinServ__CountryOfBirth__pc: FinServ__CountryOfBirth__pc
+    FinServ__ConversionDateTime__c: FinServ__ConversionDateTime__c
+    FinServ__ContactPreference__pc: FinServ__ContactPreference__pc
+    FinServ__CommunicationPreferences__pc: FinServ__CommunicationPreferences__pc
+    FinServ__ClientCategory__c: FinServ__ClientCategory__c
+    FinServ__Citizenship__pc: FinServ__Citizenship__pc
+    FinServ__BranchName__c: FinServ__BranchName__c
+    FinServ__BranchCode__c: FinServ__BranchCode__c
+    FinServ__BorrowingPriorities__c: FinServ__BorrowingPriorities__c
+    FinServ__BorrowingHistory__c: FinServ__BorrowingHistory__c
+    FinServ__BankNumber__c: FinServ__BankNumber__c
+    FinServ__AnnualIncome__pc: FinServ__AnnualIncome__pc
+    FinServ__Affiliations__pc: FinServ__Affiliations__pc
+    Fax: Fax
+    Description: Description
+    BillingStreet: BillingStreet
+    BillingState: BillingState
+    BillingPostalCode: BillingPostalCode
+    BillingLongitude: BillingLongitude
+    BillingLatitude: BillingLatitude
+    BillingGeocodeAccuracy: BillingGeocodeAccuracy
+    BillingCountry: BillingCountry
+    BillingCity: BillingCity
+    AnnualRevenue: AnnualRevenue
+    AccountSource: AccountSource
+    AccountNumber: AccountNumber
+    RecordTypeId: RecordTypeId
+  lookups:
+    ParentId:
+      table: Account
+      after: Insert Account
+    OperatingHoursId:
+      table: OperatingHours
+      after: Insert OperatingHours
+    FinServ__ReferredByUser__pc:
+      table: User
+      after: Insert User
+    FinServ__ReferredByUser__c:
+      table: User
+      after: Insert User
+    FinServ__ReferredByContact__pc:
+      table: Contact
+      after: Insert Contact
+    FinServ__ReferredByContact__c:
+      table: Contact
+      after: Insert Contact
+    FinServ__PrimaryContact__c:
+      table: Contact
+      after: Insert Contact
+
+Insert Contact:
+  sf_object: Contact
+  table: Contact
+  fields:
+    Id: sf_id
+    Title: Title
+    Salutation: Salutation
+    Phone: Phone
+    OtherStreet: OtherStreet
+    OtherState: OtherState
+    OtherPostalCode: OtherPostalCode
+    OtherPhone: OtherPhone
+    OtherLongitude: OtherLongitude
+    OtherLatitude: OtherLatitude
+    OtherGeocodeAccuracy: OtherGeocodeAccuracy
+    OtherCountry: OtherCountry
+    OtherCity: OtherCity
+    MobilePhone: MobilePhone
+    MailingStreet: MailingStreet
+    MailingState: MailingState
+    MailingPostalCode: MailingPostalCode
+    MailingLongitude: MailingLongitude
+    MailingLatitude: MailingLatitude
+    MailingGeocodeAccuracy: MailingGeocodeAccuracy
+    MailingCountry: MailingCountry
+    MailingCity: MailingCity
+    LeadSource: LeadSource
+    LastName: LastName
+    Jigsaw: Jigsaw
+    HomePhone: HomePhone
+    HasOptedOutOfFax: HasOptedOutOfFax
+    HasOptedOutOfEmail: HasOptedOutOfEmail
+    FirstName: FirstName
+    FinServ__WeddingAnniversary__c: FinServ__WeddingAnniversary__c
+    FinServ__Twitter__c: FinServ__Twitter__c
+    FinServ__TaxId__c: FinServ__TaxId__c
+    FinServ__TaxBracket__c: FinServ__TaxBracket__c
+    FinServ__SourceSystemId__c: FinServ__SourceSystemId__c
+    FinServ__SecondaryLanguage__c: FinServ__SecondaryLanguage__c
+    FinServ__SecondaryCitizenship__c: FinServ__SecondaryCitizenship__c
+    FinServ__ReferrerScore__c: FinServ__ReferrerScore__c
+    FinServ__PrimaryLanguage__c: FinServ__PrimaryLanguage__c
+    FinServ__PrimaryCitizenship__c: FinServ__PrimaryCitizenship__c
+    FinServ__PrimaryAddressIsShipping__c: FinServ__PrimaryAddressIsShipping__c
+    FinServ__PrimaryAddressIsOther__c: FinServ__PrimaryAddressIsOther__c
+    FinServ__PrimaryAddressIsMailing__c: FinServ__PrimaryAddressIsMailing__c
+    FinServ__PrimaryAddressIsBilling__c: FinServ__PrimaryAddressIsBilling__c
+    FinServ__PreferredName__c: FinServ__PreferredName__c
+    FinServ__Occupation__c: FinServ__Occupation__c
+    FinServ__NumberOfDependents__c: FinServ__NumberOfDependents__c
+    FinServ__NumberOfChildren__c: FinServ__NumberOfChildren__c
+    FinServ__NextLifeEvent__c: FinServ__NextLifeEvent__c
+    FinServ__MotherMaidenName__c: FinServ__MotherMaidenName__c
+    FinServ__MostUsedChannel__c: FinServ__MostUsedChannel__c
+    FinServ__MobileVerified__c: FinServ__MobileVerified__c
+    FinServ__MarketingOptOut__c: FinServ__MarketingOptOut__c
+    FinServ__MaritalStatus__c: FinServ__MaritalStatus__c
+    FinServ__LinkedIn__c: FinServ__LinkedIn__c
+    FinServ__LastFourDigitSSN__c: FinServ__LastFourDigitSSN__c
+    FinServ__LanguagesSpoken__c: FinServ__LanguagesSpoken__c
+    FinServ__IndividualType__c: FinServ__IndividualType__c
+    FinServ__HomePhoneVerified__c: FinServ__HomePhoneVerified__c
+    FinServ__HomeOwnership__c: FinServ__HomeOwnership__c
+    FinServ__Gender__c: FinServ__Gender__c
+    FinServ__FaxVerified__c: FinServ__FaxVerified__c
+    FinServ__Facebook__c: FinServ__Facebook__c
+    FinServ__EmployedSince__c: FinServ__EmployedSince__c
+    FinServ__EmailVerified__c: FinServ__EmailVerified__c
+    FinServ__CustomerTimezone__c: FinServ__CustomerTimezone__c
+    FinServ__CurrentEmployer__c: FinServ__CurrentEmployer__c
+    FinServ__CreatedFromLead__c: FinServ__CreatedFromLead__c
+    FinServ__CountryOfResidence__c: FinServ__CountryOfResidence__c
+    FinServ__CountryOfBirth__c: FinServ__CountryOfBirth__c
+    FinServ__ContactPreference__c: FinServ__ContactPreference__c
+    FinServ__CommunicationPreferences__c: FinServ__CommunicationPreferences__c
+    FinServ__Citizenship__c: FinServ__Citizenship__c
+    FinServ__AnnualIncome__c: FinServ__AnnualIncome__c
+    FinServ__Affiliations__c: FinServ__Affiliations__c
+    Fax: Fax
+    EmailBouncedReason: EmailBouncedReason
+    EmailBouncedDate: EmailBouncedDate
+    Email: Email
+    DoNotCall: DoNotCall
+    Description: Description
+    Department: Department
+    Birthdate: Birthdate
+    AssistantPhone: AssistantPhone
+    AssistantName: AssistantName
+    RecordTypeId: RecordTypeId
+  lookups:
+    ReportsToId:
+      table: Contact
+      after: Insert Contact
+    FinServ__ReferredByUser__c:
+      table: User
+      after: Insert User
+    FinServ__ReferredByContact__c:
+      table: Contact
+      after: Insert Contact
+    AccountId:
+      table: Account
+Insert OperatingHours:
+  sf_object: OperatingHours
+  table: OperatingHours
+  fields:
+    Id: sf_id
+    TimeZone: TimeZone
+    Name: Name
+    Description: Description
+Insert User:
+  sf_object: User
+  table: User
+  fields:
+    Id: sf_id
+    Username: Username
+    Title: Title
+    TimeZoneSidKey: TimeZoneSidKey
+    Street: Street
+    StayInTouchSubject: StayInTouchSubject
+    StayInTouchSignature: StayInTouchSignature
+    StayInTouchNote: StayInTouchNote
+    State: State
+    Signature: Signature
+    SenderName: SenderName
+    SenderEmail: SenderEmail
+    ReceivesInfoEmails: ReceivesInfoEmails
+    ReceivesAdminInfoEmails: ReceivesAdminInfoEmails
+    PostalCode: PostalCode
+    Phone: Phone
+    Longitude: Longitude
+    LocaleSidKey: LocaleSidKey
+    Latitude: Latitude
+    LastName: LastName
+    LanguageLocaleKey: LanguageLocaleKey
+    IsActive: IsActive
+    GeocodeAccuracy: GeocodeAccuracy
+    ForecastEnabled: ForecastEnabled
+    FirstName: FirstName
+    FinServ__ReferrerScore__c: FinServ__ReferrerScore__c
+    FederationIdentifier: FederationIdentifier
+    Fax: Fax
+    Extension: Extension
+    EmployeeNumber: EmployeeNumber
+    EmailPreferencesStayInTouchReminder: EmailPreferencesStayInTouchReminder
+    EmailPreferencesAutoBccStayInTouch: EmailPreferencesAutoBccStayInTouch
+    EmailPreferencesAutoBcc: EmailPreferencesAutoBcc
+    EmailEncodingKey: EmailEncodingKey
+    Email: Email
+    Division: Division
+    DigestFrequency: DigestFrequency
+    Department: Department
+    DelegatedApproverId: DelegatedApproverId
+    DefaultGroupNotificationFrequency: DefaultGroupNotificationFrequency
+    Country: Country
+    CompanyName: CompanyName
+    CommunityNickname: CommunityNickname
+    City: City
+    CallCenterId: CallCenterId
+    Alias: Alias
+    AboutMe: AboutMe
+  lookups:
+    UserRoleId:
+      table: UserRole
+    ProfileId:
+      table: Profile
+    ManagerId:
+      table: User
+      after: Insert User
+    IndividualId:
+      table: Individual
+    ContactId:
+      table: Contact
+      after: Insert Contact
