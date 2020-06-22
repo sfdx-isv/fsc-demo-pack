@@ -1,1 +1,0 @@
-SELECT Name, FinServ__InverseRole__c, FinServ__CreateInverseRole__c, RecordType.Name, FinServ__RelationshipType__c, FinServ__InverseRelationship__c, FinServ__SourceSystemId__c   FROM FinServ__ReciprocalRole__c  ORDER BY FinServ__CreateInverseRole__c DESC

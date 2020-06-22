@@ -59,22 +59,7 @@
         {
             "query": "SELECT all FROM Case",
             "operation": "Upsert",
-            "externalId": "Name"
-        },
-        {
-            "query": "SELECT all FROM ",
-            "operation": "Upsert",
-            "externalId": "Name"
-        },
-        {
-            "query": "SELECT all FROM Product2",
-            "operation": "Upsert",
-            "externalId": "Name"
-        },
-        {
-            "query": "SELECT all FROM Opportunity",
-            "operation": "Upsert",
-            "externalId": "Name"
+            "externalId": "Subject"
         },
         {
             "query": "SELECT all FROM FinServ__ChargesAndFees__c",
@@ -177,7 +162,7 @@
             "externalId": "Name"
         },
         {
-            "query": "SELECT all FROM InsurancePolicy",
+            "query": "SELECT all FROM FinServ__UsePersonAccount__c",
             "operation": "Upsert",
             "externalId": "Name"
         }

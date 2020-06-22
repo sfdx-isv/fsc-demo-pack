@@ -1,8 +1,0 @@
-AccountId,ContactId,Roles,IsActive,StartDate,EndDate,FinServ__Primary__c,FinServ__Rollups__c,FinServ__SourceSystemId__c,FinServ__IncludeInGroup__c,FinServ__PrimaryGroup__c,Errors
-0013F00000YWi3hQAD,0033F00000PdmgzQAB,Trustee,true,2020-06-10,,false,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,true,false,Can't include a business in more than one group.
-0013F00000YWi7CQAT,0033F00000PdmgzQAB,Beneficiary,true,2020-06-10,,false,,,false,false,This contact already has a relationship with this account.
-0013F00000YWi7CQAT,0033F00000PdmgxQAB,Client,true,2020-06-10,,true,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,This contact already has a relationship with this account.
-0013F00000YWi3iQAD,0033F00000PdmgzQAB,Client,true,2020-06-17,,true,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,This contact already has a relationship with this account.
-0013F00000YWi3iQAD,0033F00000PdmgyQAB,Spouse,true,2020-06-17,,false,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,This contact already has a relationship with this account.
-0013F00000YWi3jQAD,,,true,2020-08-20,,false,,,false,false,Required fields are missing: [ContactId]
-0013F00000YWi3jQAD,0033F00000Pdmh2QAB,Client,true,2020-11-02,,false,,,false,false,This contact already has a relationship with this account.

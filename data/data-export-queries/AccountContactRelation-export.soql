@@ -1,1 +1,0 @@
-SELECT Id, AccountId, Account.name, Contact.name, IsActive, ContactId, CreatedById, CreatedDate, IsDeleted, IsDirect, EndDate, FinServ__IncludeInGroup__c, LastModifiedById, LastModifiedDate, FinServ__PrimaryGroup__c, FinServ__Primary__c, Roles, FinServ__Rollups__c, FinServ__SourceSystemId__c, StartDate, SystemModstamp FROM AccountContactRelation

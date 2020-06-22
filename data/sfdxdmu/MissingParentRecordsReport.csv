@@ -1,6 +1,0 @@
-Date update,Id,Child ExternalId,Child lookup,Child SObject,Missing value,Parent ExternalId,Parent SObject
-2020-06-21  12:08:08.924,07k3h000001StBoAAK,Contact.Name,ContactId,AccountContactRelation,Ivan M Kohl (Sample),Name,Contact
-2020-06-21  12:08:14.453,a043h00000Ldg0ZAAR,FinServ__RelatedContact__r.Name,FinServ__RelatedContact__c,FinServ__ContactContactRelation__c,Ivan M Kohl (Sample),Name,Contact
-2020-06-21  12:08:14.453,a043h00000Ldg0aAAB,FinServ__Contact__r.Name,FinServ__Contact__c,FinServ__ContactContactRelation__c,Ivan M Kohl (Sample),Name,Contact
-2020-06-21  12:08:15.651,a043h00000Ldg0ZAAR,FinServ__InverseRelationship__r.Id,FinServ__InverseRelationship__c,FinServ__ContactContactRelation__c,a043h00000Ldg0aAAB,Id,FinServ__ContactContactRelation__c
-2020-06-21  12:08:15.651,a043h00000Ldg0aAAB,FinServ__InverseRelationship__r.Id,FinServ__InverseRelationship__c,FinServ__ContactContactRelation__c,a043h00000Ldg0ZAAR,Id,FinServ__ContactContactRelation__c

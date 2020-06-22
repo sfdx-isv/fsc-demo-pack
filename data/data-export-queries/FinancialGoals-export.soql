@@ -1,1 +1,0 @@
-SELECT Name, Id, FinServ__ActualValue__c, FinServ__CompletionDate__c, FinServ__Description__c,  FinServ__Household__r.Name, FinServ__InitialValue__c, FinServ__PrimaryOwner__r.Name, FinServ__SourceSystemId__c, FinServ__Status__c, SystemModstamp, FinServ__TargetDate__c, FinServ__TargetValue__c, FinServ__Type__c FROM FinServ__FinancialGoal__c

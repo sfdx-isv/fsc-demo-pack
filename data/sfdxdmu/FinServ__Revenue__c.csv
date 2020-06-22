@@ -1,0 +1,5 @@
+Id,Name,IsDeleted,CreatedDate,LastModifiedDate,SystemModstamp,LastViewedDate,LastReferencedDate,FinServ__Account__c,FinServ__Amount__c,FinServ__Date__c,FinServ__FinancialAccount__c,FinServ__SourceSystemId__c,FinServ__SubType__c,FinServ__Type__c,FinServ__Account__r.Name,FinServ__FinancialAccount__r.Name
+a0G3h000000sPAtEAM,REV-000000000,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,,500,2020-04-23,a083h000000xIDRAA2,,Transaction,Fees,,Investment Account (Sample)
+a0G3h000000sPAuEAM,REV-000000001,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,0013h00000BGEeOAAX,500,2020-04-15,,,Planning,Commission,Rachel Adams (Sample),
+a0G3h000000sPAvEAM,REV-000000002,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,0013h00000BGEeMAAX,10,2020-05-14,,,Advisory,Fees,Neil Symonds (Sample),
+a0G3h000000sPAwEAM,REV-000000003,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,0013h00000BGEeMAAX,1.75,2020-05-26,,,Transaction,Commission,Neil Symonds (Sample),

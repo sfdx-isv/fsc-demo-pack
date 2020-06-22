@@ -49,7 +49,7 @@ cci task run load_dataset -o mapping datasets/mapping.yml -o sql_path datasets/d
 
 #SFDX DMU plugin: https://github.com/forcedotcom/SFDX-Data-Move-Utility/wiki/3.-Running-the-Plugin.
 #Data Extract
-sfdx sfdmu:run --sourceusername jrattanpal-ey3n@force.com --targetusername csvfile -p data/sfdxdmu/
+sfdx sfdmu:run --sourceusername FSCTrialOrg --targetusername csvfile -p data/sfdxdmu/
 
 #data load
 sfdx sfdmu:run --sourceusername csvfile --targetusername FSCADK -p data/sfdxdmu/
