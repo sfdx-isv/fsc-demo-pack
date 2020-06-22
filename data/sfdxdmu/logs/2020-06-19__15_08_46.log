@@ -1,0 +1,41 @@
+
+[15:08:46.323] {"Running version":"3.4.9"}
+
+[15:08:46.832] Connecting to FSCADK using SFDX CLI...
+[15:08:50.532] Successfully connected to FSCADK.
+[15:08:50.551] {"SOURCE":"csvfile.","TARGET":"FSCADK.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[15:08:50.554] GETTING AND ANALYSING OBJECTS METADATA...
+[15:08:50.555] Processing the sObject OperatingHours...
+[15:08:50.557] Getting metadata for OperatingHours (TARGET)
+[15:08:51.0] Processing the sObject Account...
+[15:08:51.1] Getting metadata for Account (TARGET)
+[15:08:52.571][WARN] Field Account.Suffix is missing in the Target.
+[15:08:52.572][WARN] Field Account.MiddleName is missing in the Target.
+[15:08:52.573] Processing the sObject Contact...
+[15:08:52.574] Getting metadata for Contact (TARGET)
+[15:08:54.436][WARN] Field Contact.Suffix is missing in the Target.
+[15:08:54.438][WARN] Field Contact.MiddleName is missing in the Target.
+[15:08:54.438] Processing the sObject Contact...
+[15:08:54.448] Processing the sObject Account...
+[15:08:54.474] Processing the sObject OperatingHours...
+
+[15:08:54.478] PREPARING DATA MIGRATION JOB...
+[15:08:54.479] Building migration strategy...
+[15:08:54.481] {"Order of objects to retrieve data":"OperatingHours; Account; Contact"}
+[15:08:54.482] {"Order of objects to update data":"OperatingHours; Account; Contact"}
+[15:08:54.489] Validating and repairing of the source CSV files...
+[15:08:54.573][ERROR] Execution of the command was ABORTED due to unexpected error: line 1:0 mismatched input '<EOF>' expecting SELECT.
+[15:08:54.574] [STACK TRACE] Error: line 1:0 mismatched input '<EOF>' expecting SELECT
+    at SyntaxErrorListener.syntaxError (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:382:15)
+    at delegates.forEach.listener (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/ProxyErrorListener.js:37:26)
+    at Array.forEach (<anonymous>)
+    at ProxyParserErrorListener.syntaxError (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/ProxyErrorListener.js:35:24)
+    at SOQLParser.notifyErrorListeners (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/Parser.js:388:22)
+    at DefaultErrorStrategy.notifyErrorListeners (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:132:20)
+    at DefaultErrorStrategy.reportInputMismatch (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:287:14)
+    at DefaultErrorStrategy.reportError (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:115:18)
+    at SOQLParser.select_clause (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:7439:34)
+    at SOQLParser.soql_query (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:7285:22)
+[15:08:54.576] Execution of the command sfdmu:run has been finished. Exit code 1 (COMMAND_UNEXPECTED_ERROR).
+[15:08:54.577] Total time elapsed: 00h 00m 08s 262ms .

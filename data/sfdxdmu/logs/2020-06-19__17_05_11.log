@@ -1,0 +1,127 @@
+
+[17:05:11.336] {"Running version":"3.4.9"}
+
+[17:05:11.927] Connecting to FSCADK using SFDX CLI...
+[17:05:14.887] Successfully connected to FSCADK.
+[17:05:14.904] {"SOURCE":"csvfile.","TARGET":"FSCADK.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[17:05:14.907] GETTING AND ANALYSING OBJECTS METADATA...
+[17:05:14.909] Processing the sObject OperatingHours...
+[17:05:14.911] Getting metadata for OperatingHours (TARGET)
+[17:05:15.172] Processing the sObject Contact...
+[17:05:15.174] Getting metadata for Contact (TARGET)
+[17:05:16.185] Processing the sObject Account...
+[17:05:16.187] Getting metadata for Account (TARGET)
+[17:05:17.571][WARN] Field Account.OperatingHourId is missing in the Target.
+[17:05:17.572] Processing the sObject Account...
+[17:05:17.603] Getting metadata for RecordType (TARGET)
+[17:05:17.953] Getting metadata for Individual (TARGET)
+[17:05:18.259] Processing the sObject Contact...
+[17:05:18.266] Processing the sObject OperatingHours...
+
+[17:05:18.270] PREPARING DATA MIGRATION JOB...
+[17:05:18.270] Building migration strategy...
+[17:05:18.274] {"Order of objects to retrieve data":"RecordType; OperatingHours; Account; Contact; Individual"}
+[17:05:18.276] {"Order of objects to update data":"RecordType; Individual; OperatingHours; Account; Contact"}
+[17:05:18.290] Validating and repairing of the source CSV files...
+[17:05:18.372] Amount of updated source CSV files: 0
+[17:05:18.373] There are no issues found during the last validation of the source CSV files.
+[17:05:18.375] Validating and repairing of the source CSV files have finished.
+
+[17:05:18.380] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[17:05:18.938] {RecordType} Total amount of the TARGET records: 8
+[17:05:19.106] {Individual} Total amount of the TARGET records: 0
+[17:05:19.262] {OperatingHours} Total amount of the TARGET records: 0
+[17:05:19.419] {Account} Total amount of the TARGET records: 0
+[17:05:19.584] {Contact} Total amount of the TARGET records: 0
+
+[17:05:19.592] DELETING OLD DATA FROM THE TARGET...
+[17:05:19.594] {Contact} Nothing to delete.
+[17:05:19.596] {Account} Nothing to delete.
+[17:05:19.597] {OperatingHours} Nothing to delete.
+[17:05:19.599] {Individual} Nothing to delete.
+[17:05:19.601] {RecordType} Nothing to delete.
+[17:05:19.607] Deleting old data from the Target was skipped.
+
+[17:05:19.612] RETRIEVING THE DATA STEP 1...
+[17:05:19.617] {RecordType} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:05:19.629] {RecordType} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:05:19.631] {OperatingHours} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:05:19.635] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[17:05:19.637] {Account} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:05:19.690] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[17:05:19.692] {Contact} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:05:19.709] {Contact} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:05:19.710] {Individual} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:05:19.712] {Individual} Retrieving the SOURCE data has been completed. Fetched 0 new records.
+[17:05:19.714] Retrieving the data STEP 1 has been completed.
+
+[17:05:19.717] RETRIEVING THE DATA STEP 2...
+[17:05:19.718] PASS 1
+[17:05:19.719] =============
+[17:05:19.720] No records
+
+[17:05:19.722] PASS 2
+[17:05:19.723] =============
+[17:05:19.724] No records
+
+[17:05:19.726] PASS 3
+[17:05:19.727] =============
+[17:05:19.728] No records
+
+[17:05:19.733] PASS 4
+[17:05:19.734] =============
+[17:05:19.736] No records
+
+[17:05:19.738] TARGET
+[17:05:19.739] =============
+[17:05:19.740] {RecordType} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:05:19.741] {RecordType} Query string: SELECT Id, DeveloperName, SobjectType  FROM  RecordType WHERE (SobjectType IN ('Contact', 'Account')) ORDER BY SobjectType ASC.
+[17:05:19.945] {RecordType} Retrieving the TARGET data has been completed. Fetched 8 new records.
+[17:05:19.946] {OperatingHours} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:05:19.948] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[17:05:20.126] {OperatingHours} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:05:20.129] {Account} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:05:20.131] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, RecordTypeId, Rating, Phone, Perso... FROM  Account.
+[17:05:20.416] {Account} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:05:20.419] {Contact} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:05:20.420] {Contact} Query string: SELECT Id, Title, Salutation, ReportsToId, RecordTypeId, Phone, OtherStreet, OtherState, OtherPostalCode, OtherPhone, OtherLongitude, OtherLatitude, OtherGeocodeAccuracy, OtherCountry, OtherCity, MobilePhone, MailingStreet, MailingState, MailingPosta... FROM  Contact.
+[17:05:20.614] {Contact} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:05:20.617] Retrieving the data STEP 2 has been completed.
+
+[17:05:20.619] DATA RETRIEVING SUMMARY
+[17:05:20.620] {RecordType} Total retrieved within all steps (source/target): 7/8 records.
+[17:05:20.621] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+[17:05:20.622] {Account} Total retrieved within all steps (source/target): 10/0 records.
+[17:05:20.624] {Contact} Total retrieved within all steps (source/target): 7/0 records.
+[17:05:20.625] {Individual} Total retrieved within all steps (source/target): 0/0 records.
+
+[17:05:20.628] UPDATING THE TARGET STEP 1...
+[17:05:20.631] {OperatingHours} Number of records to Insert: 3.
+[17:05:20.634] {OperatingHours} The Insert API operation has been started using REST API.
+[17:05:20.635] [Job# REST:Insert] {OperatingHours} The job has been created. Uploading data...
+[17:05:20.897] {OperatingHours} The Insert API operation has been finished.
+[17:05:20.901] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[17:05:20.905] {Account} Number of records to Insert: 5.
+[17:05:20.907] {Account} The Insert API operation has been started using REST API.
+[17:05:20.908] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[17:05:22.196] {Account} The Insert API operation has been finished.
+[17:05:22.201] {Account} Number of records to Insert: 5.
+[17:05:22.203] {Account} The Insert API operation has been started using REST API.
+[17:05:22.204] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[17:05:24.82] {Account} The Insert API operation has been finished.
+[17:05:24.89] {Account} Updating the Target has been completed. Processed 10 records.
+[17:05:24.93] {Contact} Number of records to Insert: 2.
+[17:05:24.94] {Contact} The Insert API operation has been started using REST API.
+[17:05:24.95] [Job# REST:Insert] {Contact} The job has been created. Uploading data...
+[17:05:26.53] {Contact} The Insert API operation has been finished.
+[17:05:26.60] {Contact} Updating the Target has been completed. Processed 2 records.
+[17:05:26.61] Updating the Target (STEP 1) has been completed. Total processed 15 records.
+
+[17:05:26.64] UPDATING THE TARGET STEP 2...
+[17:05:26.73][WARN] {Account} 5 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+[17:05:32.85] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+[17:05:32.99][ERROR] Execution of the command was ABORTED by the user. 
+[17:05:32.100] Execution of the command sfdmu:run has been finished. Exit code 5 (COMMAND_ABORTED_BY_USER).
+[17:05:32.102] Total time elapsed: 00h 00m 20s 783ms .

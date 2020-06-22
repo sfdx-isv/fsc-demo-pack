@@ -1,0 +1,71 @@
+
+[15:02:26.714] {"Running version":"3.4.9"}
+
+[15:02:27.127] Connecting to jrattanpal-ey3n@force.com using SFDX CLI...
+[15:02:39.519] Successfully connected to jrattanpal-ey3n@force.com.
+[15:02:39.525] {"SOURCE":"jrattanpal-ey3n@force.com.","TARGET":"csvfile.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[15:02:39.528] GETTING AND ANALYSING OBJECTS METADATA...
+[15:02:39.529] Processing the sObject OperatingHours...
+[15:02:39.530] Getting metadata for OperatingHours (SOURCE)
+[15:02:39.810] Processing the sObject OperatingHours...
+
+[15:02:39.813] PREPARING DATA MIGRATION JOB...
+[15:02:39.814] Building migration strategy...
+[15:02:39.816] {"Order of objects to retrieve data":"OperatingHours"}
+[15:02:39.817] {"Order of objects to update data":"OperatingHours"}
+
+[15:02:39.819] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[15:02:40.25] {OperatingHours} Total amount of the SOURCE records: 3
+
+[15:02:40.30] DELETING OLD DATA FROM THE TARGET...
+[15:02:40.32] {OperatingHours} Nothing to delete.
+[15:02:40.34] Deleting old data from the Target was skipped.
+
+[15:02:40.37] RETRIEVING THE DATA STEP 1...
+[15:02:40.40] {OperatingHours} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[15:02:40.41] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[15:02:40.294] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[15:02:40.295] Retrieving the data STEP 1 has been completed.
+
+[15:02:40.297] RETRIEVING THE DATA STEP 2...
+[15:02:40.299] PASS 1
+[15:02:40.300] =============
+[15:02:40.302] No records
+
+[15:02:40.304] PASS 2
+[15:02:40.306] =============
+[15:02:40.307] No records
+
+[15:02:40.310] PASS 3
+[15:02:40.311] =============
+[15:02:40.313] No records
+
+[15:02:40.316] PASS 4
+[15:02:40.317] =============
+[15:02:40.319] No records
+
+[15:02:40.322] TARGET
+[15:02:40.326] =============
+[15:02:40.328] No records
+[15:02:40.329] Retrieving the data STEP 2 has been completed.
+
+[15:02:40.333] DATA RETRIEVING SUMMARY
+[15:02:40.335] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+
+[15:02:40.339] UPDATING THE TARGET STEP 1...
+[15:02:40.341] {OperatingHours} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/OperatingHours.csv.
+[15:02:40.352] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[15:02:40.355] Updating the Target (STEP 1) has been completed. Total processed 3 records.
+
+[15:02:40.358] UPDATING THE TARGET STEP 2...
+[15:02:40.364] Nothing was updated
+
+[15:02:40.369] DATA PROCESSING SUMMARY
+[15:02:40.372] {OperatingHours} Total processed within all steps (Insert + Update): 3 records
+
+[15:02:40.375] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+
+[15:02:40.381] Command succeeded.
+[15:02:40.386] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[15:02:40.388] Total time elapsed: 00h 00m 13s 679ms .

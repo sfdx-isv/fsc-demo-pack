@@ -1,0 +1,17 @@
+Name,FinServ__CreateInverseRole__c,FinServ__InverseRole__c,FinServ__RelationshipType__c,FinServ__SourceSystemId__c,Errors,Id
+Grandparent,true,Grandchild,,,,a0O3F000003QrPQUA0
+Business,true,Proprietor,,,,a0O3F000003QrPRUA0
+Client,false,Lawyer,,,,a0O3F000003QrPSUA0
+Ex-Spouse,false,Ex-Spouse,,,,a0O3F000003QrPTUA0
+Grandchild,false,Grandparent,,,,a0O3F000003QrPUUA0
+Power of Attorney,true,Client,,,,a0O3F000003QrPVUA0
+Accountant,true,Client,,,,a0O3F000003QrPWUA0
+Client,false,Power of Attorney,,,,a0O3F000003QrPXUA0
+Parent,true,Dependent,,,,a0O3F000003QrPYUA0
+Dependent,false,Parent,,,,a0O3F000003QrPZUA0
+Client,false,Accountant,,,,a0O3F000003QrPaUAK
+Proprietor,false,Business,,,,a0O3F000003QrPbUAK
+Sibling,false,Sibling,,,,a0O3F000003QrPcUAK
+Spouse,false,Spouse,,,,a0O3F000003QrPdUAK
+Extended Family,false,Extended Family,,,,a0O3F000003QrPeUAK
+Lawyer,true,Client,,,,a0O3F000003QrPfUAK

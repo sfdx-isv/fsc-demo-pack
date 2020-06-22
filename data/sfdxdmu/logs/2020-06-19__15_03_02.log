@@ -1,0 +1,83 @@
+
+[15:03:02.575] {"Running version":"3.4.9"}
+
+[15:03:03.77] Connecting to jrattanpal-ey3n@force.com using SFDX CLI...
+[15:03:14.672] Successfully connected to jrattanpal-ey3n@force.com.
+[15:03:14.703] {"SOURCE":"jrattanpal-ey3n@force.com.","TARGET":"csvfile.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[15:03:14.706] GETTING AND ANALYSING OBJECTS METADATA...
+[15:03:14.709] Processing the sObject OperatingHours...
+[15:03:14.711] Getting metadata for OperatingHours (SOURCE)
+[15:03:15.27] Processing the sObject Account...
+[15:03:15.29] Getting metadata for Account (SOURCE)
+[15:03:16.652] Processing the sObject Account...
+[15:03:16.680] Processing the sObject OperatingHours...
+
+[15:03:16.685] PREPARING DATA MIGRATION JOB...
+[15:03:16.686] Building migration strategy...
+[15:03:16.688] {"Order of objects to retrieve data":"OperatingHours; Account"}
+[15:03:16.689] {"Order of objects to update data":"OperatingHours; Account"}
+
+[15:03:16.692] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[15:03:16.906] {OperatingHours} Total amount of the SOURCE records: 3
+[15:03:17.112] {Account} Total amount of the SOURCE records: 10
+
+[15:03:17.119] DELETING OLD DATA FROM THE TARGET...
+[15:03:17.123] {Account} Nothing to delete.
+[15:03:17.125] {OperatingHours} Nothing to delete.
+[15:03:17.127] Deleting old data from the Target was skipped.
+
+[15:03:17.130] RETRIEVING THE DATA STEP 1...
+[15:03:17.132] {OperatingHours} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[15:03:17.134] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[15:03:17.327] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[15:03:17.329] {Account} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[15:03:17.330] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Suffix, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, Name, Rating, Phone, Perso... FROM  Account.
+[15:03:17.964] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[15:03:17.965] Retrieving the data STEP 1 has been completed.
+
+[15:03:17.967] RETRIEVING THE DATA STEP 2...
+[15:03:17.969] PASS 1
+[15:03:17.970] =============
+[15:03:17.971] No records
+
+[15:03:17.973] PASS 2
+[15:03:17.974] =============
+[15:03:17.976] No records
+
+[15:03:17.978] PASS 3
+[15:03:17.979] =============
+[15:03:17.980] No records
+
+[15:03:17.983] PASS 4
+[15:03:17.983] =============
+[15:03:17.984] No records
+
+[15:03:17.986] TARGET
+[15:03:17.988] =============
+[15:03:17.989] No records
+[15:03:17.990] Retrieving the data STEP 2 has been completed.
+
+[15:03:17.992] DATA RETRIEVING SUMMARY
+[15:03:17.993] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+[15:03:17.994] {Account} Total retrieved within all steps (source/target): 10/0 records.
+
+[15:03:17.996] UPDATING THE TARGET STEP 1...
+[15:03:17.998] {OperatingHours} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/OperatingHours.csv.
+[15:03:18.5] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[15:03:18.6] {Account} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/Account.csv.
+[15:03:18.10] {Account} Updating the Target has been completed. Processed 10 records.
+[15:03:18.12] Updating the Target (STEP 1) has been completed. Total processed 13 records.
+
+[15:03:18.14] UPDATING THE TARGET STEP 2...
+[15:03:18.16] Nothing was updated
+
+[15:03:18.18] DATA PROCESSING SUMMARY
+[15:03:18.19] {OperatingHours} Total processed within all steps (Insert + Update): 3 records
+[15:03:18.20] {Account} Total processed within all steps (Insert + Update): 10 records
+
+[15:03:18.22] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+
+[15:03:18.27] Command succeeded.
+[15:03:18.29] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[15:03:18.30] Total time elapsed: 00h 00m 15s 466ms .

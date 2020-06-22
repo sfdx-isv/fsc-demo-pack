@@ -1,0 +1,124 @@
+
+[17:13:15.5] {"Running version":"3.4.9"}
+
+[17:13:15.930] Connecting to jrattanpal-ey3n@force.com using SFDX CLI...
+[17:13:29.503] Successfully connected to jrattanpal-ey3n@force.com.
+[17:13:29.570] {"SOURCE":"jrattanpal-ey3n@force.com.","TARGET":"csvfile.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[17:13:29.578] GETTING AND ANALYSING OBJECTS METADATA...
+[17:13:29.581] Processing the sObject OperatingHours...
+[17:13:29.583] Getting metadata for OperatingHours (SOURCE)
+[17:13:29.887] Processing the sObject Contact...
+[17:13:29.888] Getting metadata for Contact (SOURCE)
+[17:13:30.770] Processing the sObject Account...
+[17:13:30.771] Getting metadata for Account (SOURCE)
+[17:13:32.732] Processing the sObject AccountContactRelation...
+[17:13:32.734] Getting metadata for AccountContactRelation (SOURCE)
+[17:13:33.161][WARN] Field AccountContactRelation.Name is missing in the Source.
+[17:13:33.170] Processing the sObject AccountContactRelation...
+[17:13:33.175] Processing the sObject Account...
+[17:13:33.226] Getting metadata for RecordType (SOURCE)
+[17:13:33.589] Getting metadata for Individual (SOURCE)
+[17:13:34.1] Processing the sObject Contact...
+[17:13:34.12] Processing the sObject OperatingHours...
+
+[17:13:34.21] PREPARING DATA MIGRATION JOB...
+[17:13:34.25] Building migration strategy...
+[17:13:34.32] {"Order of objects to retrieve data":"RecordType; OperatingHours; Account; Contact; AccountContactRelation; Individual"}
+[17:13:34.36] {"Order of objects to update data":"RecordType; Individual; OperatingHours; Account; Contact; AccountContactRelation"}
+
+[17:13:34.45] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[17:13:34.339] {RecordType} Total amount of the SOURCE records: 7
+[17:13:34.522] {Individual} Total amount of the SOURCE records: 0
+[17:13:34.893] {OperatingHours} Total amount of the SOURCE records: 3
+[17:13:35.586] {Account} Total amount of the SOURCE records: 10
+[17:13:35.768] {Contact} Total amount of the SOURCE records: 7
+[17:13:35.916] {AccountContactRelation} Total amount of the SOURCE records: 7
+
+[17:13:35.918] DELETING OLD DATA FROM THE TARGET...
+[17:13:35.919] {AccountContactRelation} Nothing to delete.
+[17:13:35.920] {Contact} Nothing to delete.
+[17:13:35.921] {Account} Nothing to delete.
+[17:13:35.922] {OperatingHours} Nothing to delete.
+[17:13:35.923] {Individual} Nothing to delete.
+[17:13:35.924] {RecordType} Nothing to delete.
+[17:13:35.925] Deleting old data from the Target was skipped.
+
+[17:13:35.930] RETRIEVING THE DATA STEP 1...
+[17:13:35.933] {RecordType} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[17:13:35.934] {RecordType} Query string: SELECT Id, DeveloperName, SobjectType  FROM  RecordType WHERE (SobjectType IN ('Contact', 'Account')) ORDER BY SobjectType ASC.
+[17:13:36.145] {RecordType} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:13:36.147] {OperatingHours} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[17:13:36.148] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[17:13:36.309] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[17:13:36.314] {Account} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[17:13:36.315] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, RecordTypeId, Rating, Phone, Perso... FROM  Account.
+[17:13:36.807] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[17:13:36.809] {Contact} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[17:13:36.809] {Contact} Query string: SELECT Id, Title, Salutation, ReportsToId, RecordTypeId, Phone, OtherStreet, OtherState, OtherPostalCode, OtherPhone, OtherLongitude, OtherLatitude, OtherGeocodeAccuracy, OtherCountry, OtherCity, MobilePhone, MailingStreet, MailingState, MailingPosta... FROM  Contact.
+[17:13:37.147] {Contact} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:13:37.148] {AccountContactRelation} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[17:13:37.149] {AccountContactRelation} Query string: SELECT Id, ContactId, AccountId, IsDirect, StartDate, Roles, IsActive, FinServ__SourceSystemId__c, FinServ__Rollups__c, FinServ__Primary__c, FinServ__PrimaryGroup__c, FinServ__IncludeInGroup__c, EndDate, Contact.Name, Account.Name  FROM  AccountContactRelation.
+[17:13:37.369] {AccountContactRelation} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:13:37.371] Retrieving the data STEP 1 has been completed.
+
+[17:13:37.374] RETRIEVING THE DATA STEP 2...
+[17:13:37.375] PASS 1
+[17:13:37.376] =============
+[17:13:37.377] No records
+
+[17:13:37.379] PASS 2
+[17:13:37.380] =============
+[17:13:37.381] No records
+
+[17:13:37.383] PASS 3
+[17:13:37.384] =============
+[17:13:37.386] No records
+
+[17:13:37.388] PASS 4
+[17:13:37.389] =============
+[17:13:37.389] No records
+
+[17:13:37.392] TARGET
+[17:13:37.392] =============
+[17:13:37.393] No records
+[17:13:37.394] Retrieving the data STEP 2 has been completed.
+
+[17:13:37.396] DATA RETRIEVING SUMMARY
+[17:13:37.397] {RecordType} Total retrieved within all steps (source/target): 7/0 records.
+[17:13:37.398] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+[17:13:37.399] {Account} Total retrieved within all steps (source/target): 10/0 records.
+[17:13:37.400] {Contact} Total retrieved within all steps (source/target): 7/0 records.
+[17:13:37.401] {AccountContactRelation} Total retrieved within all steps (source/target): 7/0 records.
+[17:13:37.402] {Individual} Total retrieved within all steps (source/target): 0/0 records.
+
+[17:13:37.404] UPDATING THE TARGET STEP 1...
+[17:13:37.405] {RecordType} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/RecordType.csv.
+[17:13:37.413] {RecordType} Updating the Target has been completed. Processed 7 records.
+[17:13:37.414] {Individual} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/Individual.csv.
+[17:13:37.416] {OperatingHours} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/OperatingHours.csv.
+[17:13:37.418] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[17:13:37.419] {Account} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/Account.csv.
+[17:13:37.427] {Account} Updating the Target has been completed. Processed 10 records.
+[17:13:37.428] {Contact} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/Contact.csv.
+[17:13:37.433] {Contact} Updating the Target has been completed. Processed 7 records.
+[17:13:37.434] {AccountContactRelation} Writing to the file /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/AccountContactRelation.csv.
+[17:13:37.438] {AccountContactRelation} Updating the Target has been completed. Processed 7 records.
+[17:13:37.440] Updating the Target (STEP 1) has been completed. Total processed 34 records.
+
+[17:13:37.446] UPDATING THE TARGET STEP 2...
+[17:13:37.447] Nothing was updated
+
+[17:13:37.450] DATA PROCESSING SUMMARY
+[17:13:37.451] {RecordType} Total processed within all steps (Insert + Update): 7 records
+[17:13:37.453] {OperatingHours} Total processed within all steps (Insert + Update): 3 records
+[17:13:37.454] {Account} Total processed within all steps (Insert + Update): 10 records
+[17:13:37.455] {Contact} Total processed within all steps (Insert + Update): 7 records
+[17:13:37.457] {AccountContactRelation} Total processed within all steps (Insert + Update): 7 records
+[17:13:37.458] {Individual} Total processed within all steps (Insert + Update): 0 records
+
+[17:13:37.461] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+
+[17:13:37.466] Command succeeded.
+[17:13:37.467] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[17:13:37.469] Total time elapsed: 00h 00m 22s 489ms .

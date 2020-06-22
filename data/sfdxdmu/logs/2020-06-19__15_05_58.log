@@ -1,0 +1,102 @@
+
+[15:05:59.14] {"Running version":"3.4.9"}
+
+[15:05:59.518] Connecting to FSCADK using SFDX CLI...
+[15:06:03.532] Successfully connected to FSCADK.
+[15:06:03.550] {"SOURCE":"csvfile.","TARGET":"FSCADK.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[15:06:03.553] GETTING AND ANALYSING OBJECTS METADATA...
+[15:06:03.555] Processing the sObject OperatingHours...
+[15:06:03.556] Getting metadata for OperatingHours (TARGET)
+[15:06:03.888] Processing the sObject Account...
+[15:06:03.889] Getting metadata for Account (TARGET)
+[15:06:05.724][WARN] Field Account.Suffix is missing in the Target.
+[15:06:05.726][WARN] Field Account.MiddleName is missing in the Target.
+[15:06:05.729] Processing the sObject Account...
+[15:06:05.771] Processing the sObject OperatingHours...
+
+[15:06:05.778] PREPARING DATA MIGRATION JOB...
+[15:06:05.779] Building migration strategy...
+[15:06:05.783] {"Order of objects to retrieve data":"OperatingHours; Account"}
+[15:06:05.785] {"Order of objects to update data":"OperatingHours; Account"}
+[15:06:05.790] Validating and repairing of the source CSV files...
+[15:06:05.865] Amount of updated source CSV files: 0
+[15:06:05.866] There are no issues found during the last validation of the source CSV files.
+[15:06:05.867] Validating and repairing of the source CSV files have finished.
+
+[15:06:05.872] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[15:06:06.56] {OperatingHours} Total amount of the TARGET records: 0
+[15:06:06.287] {Account} Total amount of the TARGET records: 0
+
+[15:06:06.290] DELETING OLD DATA FROM THE TARGET...
+[15:06:06.293] {Account} Nothing to delete.
+[15:06:06.294] {OperatingHours} Nothing to delete.
+[15:06:06.296] Deleting old data from the Target was skipped.
+
+[15:06:06.300] RETRIEVING THE DATA STEP 1...
+[15:06:06.304] {OperatingHours} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[15:06:06.309] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[15:06:06.312] {Account} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[15:06:06.353] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[15:06:06.354] Retrieving the data STEP 1 has been completed.
+
+[15:06:06.357] RETRIEVING THE DATA STEP 2...
+[15:06:06.358] PASS 1
+[15:06:06.360] =============
+[15:06:06.362] No records
+
+[15:06:06.364] PASS 2
+[15:06:06.365] =============
+[15:06:06.366] No records
+
+[15:06:06.369] PASS 3
+[15:06:06.370] =============
+[15:06:06.372] No records
+
+[15:06:06.374] PASS 4
+[15:06:06.374] =============
+[15:06:06.376] No records
+
+[15:06:06.378] TARGET
+[15:06:06.378] =============
+[15:06:06.380] {OperatingHours} Retrieving the TARGET data from Org (STEP 2: all records)...
+[15:06:06.382] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[15:06:06.551] {OperatingHours} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[15:06:06.555] {Account} Retrieving the TARGET data from Org (STEP 2: all records)...
+[15:06:06.557] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, Name, Rating, Phone, PersonTitle, ... FROM  Account.
+[15:06:06.932] {Account} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[15:06:06.934] Retrieving the data STEP 2 has been completed.
+
+[15:06:06.937] DATA RETRIEVING SUMMARY
+[15:06:06.938] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+[15:06:06.940] {Account} Total retrieved within all steps (source/target): 10/0 records.
+
+[15:06:06.942] UPDATING THE TARGET STEP 1...
+[15:06:06.948] {OperatingHours} Number of records to Insert: 3.
+[15:06:06.952] {OperatingHours} The Insert API operation has been started using REST API.
+[15:06:06.954] [Job# REST:Insert] {OperatingHours} The job has been created. Uploading data...
+[15:06:07.253] {OperatingHours} The Insert API operation has been finished.
+[15:06:07.258] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[15:06:07.262] {Account} Number of records to Insert: 5.
+[15:06:07.264] {Account} The Insert API operation has been started using REST API.
+[15:06:07.266] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[15:06:09.122] {Account} The Insert API operation has been finished.
+[15:06:09.138] {Account} Number of records to Insert: 5.
+[15:06:09.141] {Account} The Insert API operation has been started using REST API.
+[15:06:09.143] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[15:06:10.827] {Account} The Insert API operation has been finished.
+[15:06:10.831] {Account} Updating the Target has been completed. Processed 10 records.
+[15:06:10.833] Updating the Target (STEP 1) has been completed. Total processed 13 records.
+
+[15:06:10.837] UPDATING THE TARGET STEP 2...
+[15:06:10.840] Nothing was updated
+
+[15:06:10.843] DATA PROCESSING SUMMARY
+[15:06:10.844] {OperatingHours} Total processed within all steps (Insert + Update): 3 records
+[15:06:10.845] {Account} Total processed within all steps (Insert + Update): 10 records
+
+[15:06:10.847] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+
+[15:06:10.851] Command succeeded.
+[15:06:10.852] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[15:06:10.853] Total time elapsed: 00h 00m 11s 854ms .

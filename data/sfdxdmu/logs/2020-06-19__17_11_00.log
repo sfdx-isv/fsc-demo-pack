@@ -1,0 +1,155 @@
+
+[17:11:00.411] {"Running version":"3.4.9"}
+
+[17:11:00.944] Connecting to FSCADK using SFDX CLI...
+[17:11:04.190] Successfully connected to FSCADK.
+[17:11:04.203] {"SOURCE":"csvfile.","TARGET":"FSCADK.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[17:11:04.206] GETTING AND ANALYSING OBJECTS METADATA...
+[17:11:04.207] Processing the sObject OperatingHours...
+[17:11:04.209] Getting metadata for OperatingHours (TARGET)
+[17:11:04.490] Processing the sObject Contact...
+[17:11:04.491] Getting metadata for Contact (TARGET)
+[17:11:06.619] Processing the sObject Account...
+[17:11:06.620] Getting metadata for Account (TARGET)
+[17:11:08.8] Processing the sObject AccountContactRelation...
+[17:11:08.9] Getting metadata for AccountContactRelation (TARGET)
+[17:11:08.357][WARN] Field AccountContactRelation.Name is missing in the Target.
+[17:11:08.359] Processing the sObject AccountContactRelation...
+[17:11:08.361] Processing the sObject Account...
+[17:11:08.387] Getting metadata for RecordType (TARGET)
+[17:11:08.738] Getting metadata for Individual (TARGET)
+[17:11:09.90] Processing the sObject Contact...
+[17:11:09.97] Processing the sObject OperatingHours...
+
+[17:11:09.104] PREPARING DATA MIGRATION JOB...
+[17:11:09.106] Building migration strategy...
+[17:11:09.111] {"Order of objects to retrieve data":"RecordType; OperatingHours; Account; Contact; AccountContactRelation; Individual"}
+[17:11:09.112] {"Order of objects to update data":"RecordType; Individual; OperatingHours; Account; Contact; AccountContactRelation"}
+[17:11:09.122] Validating and repairing of the source CSV files...
+[17:11:09.207] Amount of updated source CSV files: 0
+[17:11:09.208] There are no issues found during the last validation of the source CSV files.
+[17:11:09.209] Validating and repairing of the source CSV files have finished.
+
+[17:11:09.213] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[17:11:09.427] {RecordType} Total amount of the TARGET records: 8
+[17:11:09.583] {Individual} Total amount of the TARGET records: 0
+[17:11:09.754] {OperatingHours} Total amount of the TARGET records: 0
+[17:11:09.973] {Account} Total amount of the TARGET records: 0
+[17:11:10.134] {Contact} Total amount of the TARGET records: 0
+[17:11:10.387] {AccountContactRelation} Total amount of the TARGET records: 0
+
+[17:11:10.390] DELETING OLD DATA FROM THE TARGET...
+[17:11:10.391] {AccountContactRelation} Nothing to delete.
+[17:11:10.392] {Contact} Nothing to delete.
+[17:11:10.393] {Account} Nothing to delete.
+[17:11:10.394] {OperatingHours} Nothing to delete.
+[17:11:10.395] {Individual} Nothing to delete.
+[17:11:10.396] {RecordType} Nothing to delete.
+[17:11:10.397] Deleting old data from the Target was skipped.
+
+[17:11:10.399] RETRIEVING THE DATA STEP 1...
+[17:11:10.401] {RecordType} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.405] {RecordType} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:11:10.406] {OperatingHours} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.408] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[17:11:10.410] {Account} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.448] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[17:11:10.449] {Contact} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.459] {Contact} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:11:10.461] {AccountContactRelation} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.465] {AccountContactRelation} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:11:10.466] {Individual} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:11:10.473] {Individual} Retrieving the SOURCE data has been completed. Fetched 0 new records.
+[17:11:10.474] Retrieving the data STEP 1 has been completed.
+
+[17:11:10.477] RETRIEVING THE DATA STEP 2...
+[17:11:10.478] PASS 1
+[17:11:10.479] =============
+[17:11:10.480] No records
+
+[17:11:10.482] PASS 2
+[17:11:10.483] =============
+[17:11:10.484] No records
+
+[17:11:10.486] PASS 3
+[17:11:10.487] =============
+[17:11:10.488] No records
+
+[17:11:10.489] PASS 4
+[17:11:10.490] =============
+[17:11:10.491] No records
+
+[17:11:10.493] TARGET
+[17:11:10.494] =============
+[17:11:10.495] {RecordType} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:11:10.497] {RecordType} Query string: SELECT Id, DeveloperName, SobjectType  FROM  RecordType WHERE (SobjectType IN ('Contact', 'Account')) ORDER BY SobjectType ASC.
+[17:11:10.683] {RecordType} Retrieving the TARGET data has been completed. Fetched 8 new records.
+[17:11:10.685] {OperatingHours} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:11:10.687] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[17:11:10.851] {OperatingHours} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:11:10.855] {Account} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:11:10.857] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, RecordTypeId, Rating, Phone, Perso... FROM  Account.
+[17:11:11.148] {Account} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:11:11.152] {Contact} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:11:11.154] {Contact} Query string: SELECT Id, Title, Salutation, ReportsToId, RecordTypeId, Phone, OtherStreet, OtherState, OtherPostalCode, OtherPhone, OtherLongitude, OtherLatitude, OtherGeocodeAccuracy, OtherCountry, OtherCity, MobilePhone, MailingStreet, MailingState, MailingPosta... FROM  Contact.
+[17:11:11.342] {Contact} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:11:11.343] {AccountContactRelation} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:11:11.344] {AccountContactRelation} Query string: SELECT Id, StartDate, Roles, IsActive, FinServ__SourceSystemId__c, FinServ__Rollups__c, FinServ__Primary__c, FinServ__PrimaryGroup__c, FinServ__IncludeInGroup__c, EndDate  FROM  AccountContactRelation.
+[17:11:11.567] {AccountContactRelation} Retrieving the TARGET data has been completed. Fetched 0 new records.
+[17:11:11.570] Retrieving the data STEP 2 has been completed.
+
+[17:11:11.574] DATA RETRIEVING SUMMARY
+[17:11:11.575] {RecordType} Total retrieved within all steps (source/target): 7/8 records.
+[17:11:11.576] {OperatingHours} Total retrieved within all steps (source/target): 3/0 records.
+[17:11:11.577] {Account} Total retrieved within all steps (source/target): 10/0 records.
+[17:11:11.578] {Contact} Total retrieved within all steps (source/target): 7/0 records.
+[17:11:11.579] {AccountContactRelation} Total retrieved within all steps (source/target): 7/0 records.
+[17:11:11.580] {Individual} Total retrieved within all steps (source/target): 0/0 records.
+
+[17:11:11.583] UPDATING THE TARGET STEP 1...
+[17:11:11.586] {OperatingHours} Number of records to Insert: 3.
+[17:11:11.588] {OperatingHours} The Insert API operation has been started using REST API.
+[17:11:11.589] [Job# REST:Insert] {OperatingHours} The job has been created. Uploading data...
+[17:11:11.834] {OperatingHours} The Insert API operation has been finished.
+[17:11:11.843] {OperatingHours} Updating the Target has been completed. Processed 3 records.
+[17:11:11.848] {Account} Number of records to Insert: 5.
+[17:11:11.851] {Account} The Insert API operation has been started using REST API.
+[17:11:11.853] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[17:11:13.50] {Account} The Insert API operation has been finished.
+[17:11:13.63] {Account} Number of records to Insert: 5.
+[17:11:13.66] {Account} The Insert API operation has been started using REST API.
+[17:11:13.67] [Job# REST:Insert] {Account} The job has been created. Uploading data...
+[17:11:14.378] {Account} The Insert API operation has been finished.
+[17:11:14.382] {Account} Updating the Target has been completed. Processed 10 records.
+[17:11:14.386] {Contact} Number of records to Insert: 2.
+[17:11:14.388] {Contact} The Insert API operation has been started using REST API.
+[17:11:14.390] [Job# REST:Insert] {Contact} The job has been created. Uploading data...
+[17:11:15.890] {Contact} The Insert API operation has been finished.
+[17:11:15.897] {Contact} Updating the Target has been completed. Processed 2 records.
+[17:11:15.899] {AccountContactRelation} Number of records to Insert: 7.
+[17:11:15.901] {AccountContactRelation} The Insert API operation has been started using REST API.
+[17:11:15.902] [Job# REST:Insert] {AccountContactRelation} The job has been created. Uploading data...
+[17:11:16.786][WARN] [Batch# REST:Insert] {AccountContactRelation} Incompleted. 0 records succeeded, 7 records failed.
+[17:11:16.787] {AccountContactRelation} The Insert API operation has been finished.
+[17:11:16.789] {AccountContactRelation} Updating the Target has been completed. Processed 7 records.
+[17:11:16.791] Updating the Target (STEP 1) has been completed. Total processed 22 records.
+
+[17:11:16.794] UPDATING THE TARGET STEP 2...
+[17:11:16.802][WARN] {Account} 5 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+[17:11:19.392] Nothing was updated
+
+[17:11:19.396] DATA PROCESSING SUMMARY
+[17:11:19.397] {RecordType} Total processed within all steps (Insert + Update): 0 records
+[17:11:19.399] {OperatingHours} Total processed within all steps (Insert + Update): 3 records
+[17:11:19.399] {Account} Total processed within all steps (Insert + Update): 10 records
+[17:11:19.402] {Contact} Total processed within all steps (Insert + Update): 2 records
+[17:11:19.404] {AccountContactRelation} Total processed within all steps (Insert + Update): 7 records
+[17:11:19.405] {Individual} Total processed within all steps (Insert + Update): 0 records
+
+[17:11:19.407] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+
+[17:11:19.411] Command succeeded.
+[17:11:19.412] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[17:11:19.414] Total time elapsed: 00h 00m 19s 014ms .

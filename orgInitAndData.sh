@@ -2,6 +2,8 @@
 #Steps
 # Install SFDX CLI
 # Install Comumuls CI
+# Create project as CCI
+# If creating project with SFDX then can Initiate project as CCI but it may update; it’s an SFDX project if it has sfdx-project.json, and it’s a CCI project if it has cumulusci.yml
 # Create Org
 # IMport SFDX alias to CCI with "cci org import <sfdx-name> <cci-name>""
 # Install FSC
@@ -9,6 +11,9 @@
 # Assign permissionsets
 # Run CCI data load 
 
+
+#Initiate as CCI project
+cci project init
 #Need to connect org first where we want to run the tool
 #I used 30-day free FSC org as it's all setup with data
 sfdx force:source:deploy -p "force-app/main/default/lwc/chooseObject,force-app/main/default/lwc/objectSchema"
@@ -73,6 +78,11 @@ delete [Select ID from Contact];
 #Use above generated mapping file to extract data from existing org
 #cci task run extract_dataset -o mapping datasets/mapping_finserv.yml -o sql_path datasets/data_finserv.sql --org trial
 #cci task run extract_dataset -o mapping datasets/mapping_FSC.yml -o sql_path datasets/data_FSC.sql --org trial
+
+#Account
+#If Person Account then need to delete data from "Account.Name" as that is set by system. Otherwise you will get following error
+### INVALID_FIELD_FOR_INSERT_UPDATE:Unable to create/update fields: Name. Please check the security settings of this field and verify that it is read/write for your profile or permission set.:Name --
+
 cci task run load_dataset -o mapping datasets/mapping_FSC_Without_PC.yml -o sql_path datasets/data_FSC_Without_PC.sql --org TestCumulusCI 
 #mapping_FSC_Without_PC is to generate Account data without Person Account (__pc) fields. This is to get records that are non-Person Accounts otherwise those records will fail when using Bulk API
 #Need to remove Person Account Fields becasue CCI doesn't differentiate between business and Person Accounts yet

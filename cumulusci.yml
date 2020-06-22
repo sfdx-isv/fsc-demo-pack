@@ -1,0 +1,20 @@
+minimum_cumulusci_version: '3.13.2'
+project:
+    name: fsc-demo-pack
+    package:
+        name:  fsc-demo-pack
+        api_version: '48.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/fsc-demo-pack/tests
+            options:
+                outputdir: robot/fsc-demo-pack/results
+
+    robot_testdoc:
+        options:
+            path: robot/fsc-demo-pack/tests
+            output: robot/fsc-demo-pack/doc/fsc-demo-pack_tests.html
+

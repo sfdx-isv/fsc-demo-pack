@@ -1,0 +1,138 @@
+
+[17:58:05.284] {"Running version":"3.4.9"}
+
+[17:58:05.736] Connecting to FSCADK using SFDX CLI...
+[17:58:08.972] Successfully connected to FSCADK.
+[17:58:08.989] {"SOURCE":"csvfile.","TARGET":"FSCADK.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[17:58:08.992] GETTING AND ANALYSING OBJECTS METADATA...
+[17:58:08.994] Processing the sObject OperatingHours...
+[17:58:08.995] Getting metadata for OperatingHours (TARGET)
+[17:58:09.276] Processing the sObject Contact...
+[17:58:09.277] Getting metadata for Contact (TARGET)
+[17:58:10.161] Processing the sObject Account...
+[17:58:10.162] Getting metadata for Account (TARGET)
+[17:58:11.841] Processing the sObject AccountContactRelation...
+[17:58:11.842] Getting metadata for AccountContactRelation (TARGET)
+[17:58:12.331][WARN] Field AccountContactRelation.Name is missing in the Target.
+[17:58:12.333] Processing the sObject FinServ__AccountAccountRelation__c...
+[17:58:12.334] Getting metadata for FinServ__AccountAccountRelation__c (TARGET)
+[17:58:12.651] Processing the sObject FinServ__ReciprocalRole__c...
+[17:58:12.653] Getting metadata for FinServ__ReciprocalRole__c (TARGET)
+[17:58:12.931] Processing the sObject FinServ__ReciprocalRole__c...
+[17:58:12.970] Getting metadata for RecordType (TARGET)
+[17:58:13.301] Processing the sObject FinServ__AccountAccountRelation__c...
+[17:58:13.303] Processing the sObject AccountContactRelation...
+[17:58:13.305] Processing the sObject Account...
+[17:58:13.315] Getting metadata for Individual (TARGET)
+[17:58:13.598] Processing the sObject Contact...
+[17:58:13.605] Processing the sObject OperatingHours...
+
+[17:58:13.610] PREPARING DATA MIGRATION JOB...
+[17:58:13.614] Building migration strategy...
+[17:58:13.625] {"Order of objects to retrieve data":"RecordType; OperatingHours; Account; Contact; AccountContactRelation; FinServ__ReciprocalRole__c; FinServ__AccountAccountRelation__c; Individual"}
+[17:58:13.627] {"Order of objects to update data":"RecordType; Individual; OperatingHours; Account; Contact; AccountContactRelation; FinServ__ReciprocalRole__c; FinServ__AccountAccountRelation__c"}
+[17:58:13.640] Validating and repairing of the source CSV files...
+[17:58:13.739] Amount of updated source CSV files: 0
+[17:58:13.741] There are no issues found during the last validation of the source CSV files.
+[17:58:13.741] Validating and repairing of the source CSV files have finished.
+
+[17:58:13.745] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[17:58:13.944] {RecordType} Total amount of the TARGET records: 10
+[17:58:14.112] {Individual} Total amount of the TARGET records: 0
+[17:58:14.284] {OperatingHours} Total amount of the TARGET records: 3
+[17:58:14.453] {Account} Total amount of the TARGET records: 10
+[17:58:14.649] {Contact} Total amount of the TARGET records: 7
+[17:58:14.950] {AccountContactRelation} Total amount of the TARGET records: 8
+[17:58:15.141] {FinServ__ReciprocalRole__c} Total amount of the TARGET records: 0
+[17:58:15.304] {FinServ__AccountAccountRelation__c} Total amount of the TARGET records: 0
+
+[17:58:15.307] DELETING OLD DATA FROM THE TARGET...
+[17:58:15.309] {FinServ__AccountAccountRelation__c} Nothing to delete.
+[17:58:15.310] {FinServ__ReciprocalRole__c} Nothing to delete.
+[17:58:15.311] {AccountContactRelation} Nothing to delete.
+[17:58:15.312] {Contact} Nothing to delete.
+[17:58:15.313] {Account} Nothing to delete.
+[17:58:15.315] {OperatingHours} Nothing to delete.
+[17:58:15.316] {Individual} Nothing to delete.
+[17:58:15.317] {RecordType} Nothing to delete.
+[17:58:15.318] Deleting old data from the Target was skipped.
+
+[17:58:15.320] RETRIEVING THE DATA STEP 1...
+[17:58:15.322] {RecordType} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.330] {RecordType} Retrieving the SOURCE data has been completed. Fetched 9 new records.
+[17:58:15.331] {OperatingHours} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.334] {OperatingHours} Retrieving the SOURCE data has been completed. Fetched 3 new records.
+[17:58:15.336] {Account} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.368] {Account} Retrieving the SOURCE data has been completed. Fetched 10 new records.
+[17:58:15.370] {Contact} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.379] {Contact} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:58:15.381] {AccountContactRelation} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.385] {AccountContactRelation} Retrieving the SOURCE data has been completed. Fetched 7 new records.
+[17:58:15.387] {FinServ__ReciprocalRole__c} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.395] {FinServ__ReciprocalRole__c} Retrieving the SOURCE data has been completed. Fetched 16 new records.
+[17:58:15.397] {FinServ__AccountAccountRelation__c} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.405] {FinServ__AccountAccountRelation__c} Retrieving the SOURCE data has been completed. Fetched 0 new records.
+[17:58:15.408] {Individual} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[17:58:15.411] {Individual} Retrieving the SOURCE data has been completed. Fetched 0 new records.
+[17:58:15.413] Retrieving the data STEP 1 has been completed.
+
+[17:58:15.415] RETRIEVING THE DATA STEP 2...
+[17:58:15.416] PASS 1
+[17:58:15.417] =============
+[17:58:15.418] No records
+
+[17:58:15.420] PASS 2
+[17:58:15.421] =============
+[17:58:15.422] No records
+
+[17:58:15.424] PASS 3
+[17:58:15.425] =============
+[17:58:15.426] No records
+
+[17:58:15.428] PASS 4
+[17:58:15.430] =============
+[17:58:15.431] No records
+
+[17:58:15.433] TARGET
+[17:58:15.435] =============
+[17:58:15.437] {RecordType} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:58:15.438] {RecordType} Query string: SELECT Id, DeveloperName, SobjectType  FROM  RecordType WHERE (SobjectType IN ('Contact', 'Account', 'FinServ__ReciprocalRole__c')) ORDER BY SobjectType ASC.
+[17:58:15.675] {RecordType} Retrieving the TARGET data has been completed. Fetched 10 new records.
+[17:58:15.676] {OperatingHours} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:58:15.678] {OperatingHours} Query string: SELECT Id, TimeZone, Name, Description  FROM  OperatingHours.
+[17:58:15.836] {OperatingHours} Retrieving the TARGET data has been completed. Fetched 3 new records.
+[17:58:15.843] {Account} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:58:15.844] {Account} Query string: SELECT Id, Website, Type, TickerSymbol, Site, SicDesc, Sic, ShippingStreet, ShippingState, ShippingPostalCode, ShippingLongitude, ShippingLatitude, ShippingGeocodeAccuracy, ShippingCountry, ShippingCity, Salutation, RecordTypeId, Rating, Phone, Perso... FROM  Account.
+[17:58:16.283] {Account} Retrieving the TARGET data has been completed. Fetched 10 new records.
+[17:58:16.295] {Contact} Retrieving the TARGET data from Org (STEP 2: all records)...
+[17:58:16.296] {Contact} Query string: SELECT Id, Title, Salutation, ReportsToId, RecordTypeId, Phone, OtherStreet, OtherState, OtherPostalCode, OtherPhone, OtherLongitude, OtherLatitude, OtherGeocodeAccuracy, OtherCountry, OtherCity, MobilePhone, MailingStreet, MailingState, MailingPosta... FROM  Contact.
+[17:58:16.644] {Contact} Retrieving the TARGET data has been completed. Fetched 7 new records.
+[17:58:16.645] Retrieving the data STEP 2 has been completed.
+
+[17:58:16.648] DATA RETRIEVING SUMMARY
+[17:58:16.649] {RecordType} Total retrieved within all steps (source/target): 9/10 records.
+[17:58:16.650] {OperatingHours} Total retrieved within all steps (source/target): 3/3 records.
+[17:58:16.651] {Account} Total retrieved within all steps (source/target): 10/10 records.
+[17:58:16.651] {Contact} Total retrieved within all steps (source/target): 7/7 records.
+[17:58:16.652] {AccountContactRelation} Total retrieved within all steps (source/target): 7/0 records.
+[17:58:16.655] {FinServ__ReciprocalRole__c} Total retrieved within all steps (source/target): 16/0 records.
+[17:58:16.657] {FinServ__AccountAccountRelation__c} Total retrieved within all steps (source/target): 0/0 records.
+[17:58:16.658] {Individual} Total retrieved within all steps (source/target): 0/0 records.
+
+[17:58:16.660] UPDATING THE TARGET STEP 1...
+[17:58:16.663] {OperatingHours} [INFO] There are 3 skipped target updates, since no matching was found between the source and the target records by the given ExternalId key, or the data is the same.
+[17:58:16.670] {Account} [INFO] There are 10 skipped target updates, since no matching was found between the source and the target records by the given ExternalId key, or the data is the same.
+[17:58:16.673] {Contact} Number of records to Insert: 1.
+[17:58:16.676] {Contact} The Insert API operation has been started using REST API.
+[17:58:16.677] [Job# REST:Insert] {Contact} The job has been created. Uploading data...
+[17:58:17.499][WARN] [Batch# REST:Insert] {Contact} Incompleted. 0 records succeeded, 1 records failed.
+[17:58:17.501] {Contact} The Insert API operation has been finished.
+[17:58:17.508] {Contact} [INFO] There are 1 skipped target updates, since no matching was found between the source and the target records by the given ExternalId key, or the data is the same.
+[17:58:17.509] {Contact} Updating the Target has been completed. Processed 1 records.
+[17:58:17.511][WARN] {AccountContactRelation} 1 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+[17:58:23.522] Writing to /Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/MissingParentRecordsReport.csv...
+[17:58:23.528][ERROR] Execution of the command was ABORTED by the user. 
+[17:58:23.531] Execution of the command sfdmu:run has been finished. Exit code 5 (COMMAND_ABORTED_BY_USER).
+[17:58:23.533] Total time elapsed: 00h 00m 18s 257ms .

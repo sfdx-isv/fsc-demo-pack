@@ -1,32 +1,12 @@
-Instructions to Run the Scripts:
+# fsc-demo-pack
 
-1) Log into your Salesforce DevHub
-    * sfdx force:auth:web:login
+Add a brief description of this project here, in Markdown format.
+It will be shown on the main page of the project's GitHub repository.
 
-2) Clone the repo: 
-    * git clone https://github.com/Vchalem/fsc-demo-pack.git
-    
-3) Change your directory to where the repo is: 
-    * cd fsc-demo-pack
+## Development
 
-4) In finder: Go to the repo fsc-demo-pack > go to the config folder > Open the config.sh file and edit: 
-   * Set the variable “devhub” at the beginning of the script to point to your devhub alias
-      * (To set an alias for your devhub use this command: sfdx force:alias:set YourAlias=username@example.com)
-   * Set the variable "markScratchOrgForDeletion"
-      * 0=existing scratch org in your devhub will not be deleted
-      * 1=existing scratch org in your devhub will be deleted
-   * Set the variables for the install packages to point to the current release for the FSC Packages you are installing 
-  
+To work on this project in a scratch org:
 
-5) Open the orgInit.sh script and identify which of the scripts you want to run
-      * By default they are all set =1 so that they will all run consecutively  
-
-6) Run the orgInit.sh script
-   * Type "./orgInit.sh", press enter and it will open newly created scratch org
-   * hit enter
-
-All commands together (after you update DevHub in config/config.sh)
-```
-git clone https://github.com/Vchalem/fsc-demo-pack.git
-cd fsc-demo-pack.
-./orgInit.sh
+1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
+2. Run `cci flow run dev_org --org dev` to deploy this project.
+3. Run `cci org browser dev` to open the org in your browser.

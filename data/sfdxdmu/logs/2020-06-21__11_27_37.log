@@ -1,0 +1,35 @@
+
+[11:27:37.292] {"Running version":"3.4.9"}
+
+[11:27:37.751] Connecting to jrattanpal-ey3n@force.com using SFDX CLI...
+[11:27:51.984] Successfully connected to jrattanpal-ey3n@force.com.
+[11:27:51.993] {"SOURCE":"jrattanpal-ey3n@force.com.","TARGET":"csvfile.","Package script":"/Users/jrattanpal/workspace/fsc-demo-pack/data/sfdxdmu/export.json."}
+
+[11:27:51.997] GETTING AND ANALYSING OBJECTS METADATA...
+[11:27:51.998] Processing the sObject OperatingHours...
+[11:27:52.0] Getting metadata for OperatingHours (SOURCE)
+[11:27:52.262] Processing the sObject Contact...
+[11:27:52.264] Getting metadata for Contact (SOURCE)
+[11:27:52.964] Processing the sObject Account...
+[11:27:52.966] Getting metadata for Account (SOURCE)
+[11:27:53.843] Processing the sObject Account...
+[11:27:53.863] Getting metadata for Individual (SOURCE)
+[11:27:54.151] Processing the sObject Contact...
+[11:27:54.159] Processing the sObject OperatingHours...
+
+[11:27:54.165] PREPARING DATA MIGRATION JOB...
+[11:27:54.166] Building migration strategy...
+[11:27:54.180][ERROR] Execution of the command was ABORTED due to unexpected error: line 1:0 mismatched input '<EOF>' expecting SELECT.
+[11:27:54.184] [STACK TRACE] Error: line 1:0 mismatched input '<EOF>' expecting SELECT
+    at SyntaxErrorListener.syntaxError (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:382:15)
+    at delegates.forEach.listener (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/ProxyErrorListener.js:37:26)
+    at Array.forEach (<anonymous>)
+    at ProxyParserErrorListener.syntaxError (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/ProxyErrorListener.js:35:24)
+    at SOQLParser.notifyErrorListeners (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/Parser.js:388:22)
+    at DefaultErrorStrategy.notifyErrorListeners (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:132:20)
+    at DefaultErrorStrategy.reportInputMismatch (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:287:14)
+    at DefaultErrorStrategy.reportError (/Users/jrattanpal/.local/share/sfdx/node_modules/antlr4ts/DefaultErrorStrategy.js:115:18)
+    at SOQLParser.select_clause (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:7439:34)
+    at SOQLParser.soql_query (/Users/jrattanpal/.local/share/sfdx/node_modules/soql-parser-js/dist/index.js:7285:22)
+[11:27:54.187] Execution of the command sfdmu:run has been finished. Exit code 1 (COMMAND_UNEXPECTED_ERROR).
+[11:27:54.189] Total time elapsed: 00h 00m 16s 895ms .
