@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>PersonAccount</label>
+    <label>Person Account</label>
     <protected>false</protected>
     <values>
         <field>FinServ__AccountRecordTypeNamespace__c</field>
@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>FinServ__AccountRecordType__c</field>
-        <value xsi:type="xsd:string">PersonAccount1</value>
+        <value xsi:type="xsd:string">PersonAccount</value>
     </values>
     <values>
         <field>FinServ__ContactRecordTypeNamespace__c</field>

@@ -25,6 +25,7 @@ sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FSC_DataLoad_Custom
 
 
+
 #Send user password reset email
 sfdx force:apex:execute -f config/setup.apex
 

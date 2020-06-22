@@ -1,0 +1,5 @@
+FinServ__Account__c,FinServ__Amount__c,FinServ__Date__c,FinServ__FinancialAccount__c,FinServ__SourceSystemId__c,FinServ__SubType__c,FinServ__Type__c,Errors,Id
+,500,2020-04-23,a0F1F000001jMPOUA2,,Transaction,Fees,,a0Q1F000004zMHJUA2
+0011F00000eaAlVQAU,500,2020-04-15,,,Planning,Commission,,a0Q1F000004zMHKUA2
+0011F00000eaAlTQAU,10,2020-05-14,,,Advisory,Fees,,a0Q1F000004zMHLUA2
+0011F00000eaAlTQAU,1.75,2020-05-26,,,Transaction,Commission,,a0Q1F000004zMHMUA2

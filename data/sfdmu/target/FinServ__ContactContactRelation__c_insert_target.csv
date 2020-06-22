@@ -1,0 +1,3 @@
+FinServ__Active__c,FinServ__Contact__c,FinServ__EndDate__c,FinServ__ExternalId__c,FinServ__RelatedContact__c,FinServ__Role__c,FinServ__SourceSystemId__c,FinServ__StartDate__c,Errors,Id
+true,,,,0031F00000VbZKnQAN,a0O1F000002du40UAA,,2020-06-09,,a081F0000048qcOQAQ
+true,0031F00000VbZKnQAN,,,,a0O1F000002du4PUAQ,,2020-06-09,Value does not exist or does not match filter criteria.,

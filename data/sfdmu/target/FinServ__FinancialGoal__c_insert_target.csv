@@ -1,0 +1,5 @@
+Name,FinServ__ActualValue__c,FinServ__CompletionDate__c,FinServ__Description__c,FinServ__Household__c,FinServ__InitialValue__c,FinServ__PrimaryOwner__c,FinServ__SourceSystemId__c,FinServ__Status__c,FinServ__TargetDate__c,FinServ__TargetValue__c,FinServ__Type__c,Errors,Id
+Tahoe Vacation Home (Sample),280000,,,0011F00000eaBRXQA2,,0011F00000eaAlVQAU,,In Progress,2022-08-22,450000,Home Purchase,,a0G1F000002DrvWUAS
+Laura's Wedding Fund (Sample),67000,,Laura is Rachel's niece,0011F00000eaBRXQA2,,0011F00000eaAlVQAU,,In Progress,2021-08-21,100000,Other,,a0G1F000002DrvXUAS
+Education Savings for Matt (Sample),75000,,,0011F00000eaBRXQA2,,0011F00000eaAlUQAU,,In Progress,2022-08-22,300000,Education,,a0G1F000002DrvYUAS
+Retirement Goals (Sample),532000,,,0011F00000eaBRZQA2,,0011F00000eaAlTQAU,,In Progress,2020-05-10,540000,Retirement,,a0G1F000002DrvZUAS

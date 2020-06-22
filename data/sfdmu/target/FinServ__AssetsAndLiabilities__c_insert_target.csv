@@ -1,0 +1,3 @@
+Name,FinServ__Amount__c,FinServ__AssetsAndLiabilitiesSource__c,FinServ__AssetsAndLiabilitiesType__c,FinServ__Description__c,FinServ__FinancialAccount__c,FinServ__Household__c,FinServ__JointOwner__c,FinServ__OwnerType__c,FinServ__Ownership__c,FinServ__PrimaryOwner__c,FinServ__SourceSystemId__c,Errors,Id
+Auto Loan (Sample),25000,,Auto Loan,,,0011F00000eaBRXQA2,,0013h00000BGEeOAAX,Individual,0011F00000eaAlVQAU,,,a031F000004lV4TQAU
+Adams' House (Sample),1000000,,Real Estate,,,0011F00000eaBRXQA2,0011F00000eaAlUQAU,0013h00000BGEeOAAX,Joint,0011F00000eaAlVQAU,,,a031F000004lV4UQAU

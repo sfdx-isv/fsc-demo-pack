@@ -1,0 +1,8 @@
+AccountId,ContactId,Roles,IsActive,StartDate,EndDate,FinServ__Primary__c,FinServ__Rollups__c,FinServ__SourceSystemId__c,FinServ__IncludeInGroup__c,FinServ__PrimaryGroup__c,Errors
+0011F00000eaAqGQAU,,Trustee,true,2020-06-10,,false,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,true,false,Required fields are missing: [ContactId]
+0011F00000eaBRZQA2,,Beneficiary,true,2020-06-10,,false,,,false,false,Required fields are missing: [ContactId]
+0011F00000eaBRZQA2,,Client,true,2020-06-10,,true,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,A contact can have only one primary group.
+0011F00000eaBRXQA2,,Client,true,2020-06-17,,true,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,A contact can have only one primary group.
+0011F00000eaBRXQA2,,Spouse,true,2020-06-17,,false,Tasks;Events;Financial Accounts;Assets and Liabilities;Financial Goals;All;Referrals;Opportunities,,false,true,A contact can have only one primary group.
+0011F00000eaBRYQA2,0031F00000VbZKnQAN,,true,2020-08-20,,false,,,false,false,You can't associate a private contact with an account.
+0011F00000eaBRYQA2,0031F00000VbZKmQAN,Client,true,2020-11-02,,false,,,false,false,You can't associate a private contact with an account.

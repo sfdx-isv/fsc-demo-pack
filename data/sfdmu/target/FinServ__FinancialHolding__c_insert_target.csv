@@ -1,0 +1,3 @@
+Name,FinServ__FinancialAccount__c,FinServ__AssetCategoryName__c,FinServ__AssetCategory__c,FinServ__AssetClass__c,FinServ__GainLoss__c,FinServ__Household__c,FinServ__LastUpdated__c,FinServ__MarketValue__c,FinServ__PercentChange__c,FinServ__Price__c,FinServ__PrimaryOwner__c,FinServ__PurchasePrice__c,FinServ__Securities__c,FinServ__Shares__c,FinServ__SourceSystemId__c,Errors,Id
+CRM Holding R/A (Sample),a0F1F000001jMPQUA2,Large Growth,U.S. Equity,Equities,,0011F00000eaBRXQA2,2020-08-20,138130,,69.09,0011F00000eaAlVQAU,,a0T1F000001hssqUAA,2000,,,a0H1F000002rxi2UAA
+AAPL Holding R/A (Sample),a0F1F000001jMPQUA2,Large Growth,U.S. Equity,Equities,,0011F00000eaBRXQA2,2020-08-20,17514,,116.76,0011F00000eaAlVQAU,,a0T1F000001hssrUAA,150,,,a0H1F000002rxi3UAA

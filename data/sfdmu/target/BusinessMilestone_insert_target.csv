@@ -1,0 +1,11 @@
+Name,PrimaryAccountId,MilestoneDate,IsTentative,MilestoneType,SourceSystemIdentifier,SourceSystem,MilestoneSiteId,MilestoneDescription,IsExpired,ExpirationDate,ExpirationDescription,Errors,Id
+Partnered with Yelp  (Sample),0011F00000eaAqFQAU,2019-09-02T19:00:00.000+0000,false,New Partnership,,,,,false,,,,0do1F0000000001QAA
+Opened a new Restaurant in Manhattan  (Sample),0011F00000eaAqFQAU,2019-08-13T19:00:00.000+0000,false,New Product Launch,,,,,false,,,,0do1F0000000002QAA
+New Manhattan outlet Opening  (Sample),0011F00000eaAqFQAU,2019-09-30T19:00:00.000+0000,false,Expansion,,,,,false,,,,0do1F0000000003QAA
+Ranked Top in Brooklyn by Yelp  (Sample),0011F00000eaAqFQAU,2019-09-01T19:00:00.000+0000,false,Award,,,,,false,,,,0do1F0000000004QAA
+Acquired Agency,0011F00000eaBRYQA2,2018-12-27T20:00:00.000+0000,false,Merger & Acquisition,,,,,false,,,,0do1F0000000005QAA
+APAC Expansion,0011F00000eaBRYQA2,2019-12-24T20:00:00.000+0000,false,Expansion,,,,,false,,,,0do1F0000000006QAA
+New CEO Mark,0011F00000eaBRYQA2,2018-12-30T20:00:00.000+0000,false,Executive Change,,,,,false,,,,0do1F0000000007QAA
+Market Listing,0011F00000eaBRYQA2,2018-09-11T19:00:00.000+0000,false,Market Listing,,,,,false,,,,0do1F0000000008QAA
+Best Distribution Award,0011F00000eaBRYQA2,2019-12-29T20:00:00.000+0000,false,Award,,,,,false,,,,0do1F0000000009QAA
+Incorporation,0011F00000eaBRYQA2,1990-11-14T20:00:00.000+0000,false,Incorporation,,,,,false,,,,0do1F000000000AQAQ

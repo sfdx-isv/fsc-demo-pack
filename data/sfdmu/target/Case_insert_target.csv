@@ -1,0 +1,9 @@
+Subject,ContactId,AccountId,SourceId,SuppliedName,SuppliedEmail,SuppliedPhone,SuppliedCompany,Type,Status,Reason,Origin,Priority,Description,IsEscalated,Comments,FinServ__FinancialAccount__c,AssetId,Errors,Id
+Can not access Tax Documents (Sample),,0011F00000eaAlVQAU,,,,,,Question,Escalated,Instructions not clear,Email,Medium,"Rachel's email:
+
+The email you sent did not contain the password for the tax documents. Could you please email that to me? Thanks.",false,,,,,5001F000005W4PEQA0
+Can not access Legal Documents (Sample),,0011F00000eaAlUQAU,,,,,,Question,New,Instructions not clear,Phone,Medium,"Nigel's email:
+
+The email you sent did not contain the password for the Legal documents. Could you please email that to me? Thanks.",false,,,,,5001F000005W4PFQA0
+Instruction Not Clear,,0011F00000eaAlSQAU,,,,,,,New,Instructions not clear,Email,Medium,,false,,,,,5001F000005W4PGQA0
+Cannot access details(Sample),,0011F00000eaAlSQAU,,,,,,Question,Closed,Instructions not clear,Email,Medium,,false,,,,,5001F000005W4PHQA0
