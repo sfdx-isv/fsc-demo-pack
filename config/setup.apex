@@ -9,4 +9,3 @@ User u = [select id,name, LastName, FirstName, username, ProfileId,  alias, emai
 System.resetPassword (u.Id, true);
 
 
-FscDemoPack_DataSetup.preSetupForDemoData();
