@@ -1,0 +1,3 @@
+Id,Name,IsDeleted,CreatedDate,LastModifiedDate,SystemModstamp,LastViewedDate,LastReferencedDate,FinServ__CUSIP__c,FinServ__Exchange__c,FinServ__LastUpdated__c,FinServ__Price__c,FinServ__SecuritiesName__c,FinServ__SecurityId__c,FinServ__SourceSystemId__c,FinServ__AssetCategoryName__c,FinServ__AssetCategory__c,FinServ__AssetClass__c
+a0J3h000000689tEAA,CRM,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,79466L302,NYSE,2020-08-20,69.09,Salesforce.com Inc (Sample),,,Large Blend,U.S. Equity,Equities
+a0J3h000000689uEAA,AAPL,false,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,2020-06-11T01:48:18.000+0000,,,037833100,NASDAQ,2020-08-20,116.76,Apple Inc (Sample),,,Large Value,U.S. Equity,Equities

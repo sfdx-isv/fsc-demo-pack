@@ -35,21 +35,14 @@ sfdx force:user:permset:assign -n FSC_DataLoad_Custom
 #sfdx force:apex:execute -f config/create-demo-data.apex
 
 
-sfdx force:org:open
-
-
-#Data Import
-#If not already, a project needs to Cumulus CI project to run CCI command
-#Use "cci project init" to initilize CCI project
-#https://cumulusci.readthedocs.io/en/latest/tutorial.html#part-2-project-configuration
-#Link SFDX Alias to Cumulus CI (CCI)
-cci org import FSCADK FSCADK
-
-cci task run load_dataset -o mapping datasets/mapping.yml -o sql_path datasets/data.sql --org FSCADK 
 
 #SFDX DMU plugin: https://github.com/forcedotcom/SFDX-Data-Move-Utility/wiki/3.-Running-the-Plugin.
 #Data Extract
-sfdx sfdmu:run --sourceusername FSCTrialOrg --targetusername csvfile -p data/sfdxdmu/
+sfdx sfdmu:run --sourceusername FSCTrialOrg --targetusername csvfile -p data/sfdmu/
 
 #data load
-sfdx sfdmu:run --sourceusername csvfile --targetusername FSCADK -p data/sfdxdmu/
+sfdx sfdmu:run --sourceusername csvfile --targetusername FSCADK -p data/sfdmu/ --noprompt
+
+
+sfdx force:org:open
+
