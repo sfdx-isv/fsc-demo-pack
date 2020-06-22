@@ -22,10 +22,12 @@ sfdx force:package:install --package 04t1E000001Iql5 -w 20
 sfdx force:source:push 
 
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
+#This permission set is for data load as some permissions are not assigned yet
+#You can remove this after data load
 sfdx force:user:permset:assign -n FSC_DataLoad_Custom
 
 
-#SFDX DMU plugin: https://github.com/forcedotcom/SFDX-Data-Move-Utility/wiki/3.-Running-the-Plugin.
+#SFDX DMU plugin: https://github.com/forcedotcom/SFDX-Data-Move-Utility/wiki
 #Data Extract from existing org; if needed
 #sfdx sfdmu:run --sourceusername FSCTrialOrg --targetusername csvfile -p data/sfdmu/
 
